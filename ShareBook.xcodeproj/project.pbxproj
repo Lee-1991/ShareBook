@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0F7C71C6957D8F5BED0E3997 /* libPods-ShareBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FF83D27CCAEB8A798D5EEB /* libPods-ShareBook.a */; };
+		491C6E051F40AA7F00001F2A /* BaseRespModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 491C6E041F40AA7F00001F2A /* BaseRespModel.m */; };
+		491C6E0B1F40AAF300001F2A /* BookInfoRespModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 491C6E0A1F40AAF300001F2A /* BookInfoRespModel.m */; };
+		491C6E0E1F40AB0700001F2A /* BookInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 491C6E0D1F40AB0700001F2A /* BookInfoModel.m */; };
+		491C6E111F40AB3C00001F2A /* UserMiniInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 491C6E101F40AB3C00001F2A /* UserMiniInfoModel.m */; };
+		491C6E141F40AE6F00001F2A /* ImageInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 491C6E131F40AE6F00001F2A /* ImageInfoModel.m */; };
 		491FE8771F3EBC01002723DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 491FE8761F3EBC01002723DD /* main.m */; };
 		491FE87A1F3EBC01002723DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 491FE8791F3EBC01002723DD /* AppDelegate.m */; };
 		491FE8821F3EBC01002723DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491FE8811F3EBC01002723DD /* Assets.xcassets */; };
@@ -27,6 +32,16 @@
 /* Begin PBXFileReference section */
 		05C804EE3A26DE24C86F924A /* Pods-ShareBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareBook/Pods-ShareBook.debug.xcconfig"; sourceTree = "<group>"; };
 		47FF83D27CCAEB8A798D5EEB /* libPods-ShareBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		491C6E031F40AA7F00001F2A /* BaseRespModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRespModel.h; sourceTree = "<group>"; };
+		491C6E041F40AA7F00001F2A /* BaseRespModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRespModel.m; sourceTree = "<group>"; };
+		491C6E091F40AAF300001F2A /* BookInfoRespModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookInfoRespModel.h; sourceTree = "<group>"; };
+		491C6E0A1F40AAF300001F2A /* BookInfoRespModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookInfoRespModel.m; sourceTree = "<group>"; };
+		491C6E0C1F40AB0700001F2A /* BookInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookInfoModel.h; sourceTree = "<group>"; };
+		491C6E0D1F40AB0700001F2A /* BookInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookInfoModel.m; sourceTree = "<group>"; };
+		491C6E0F1F40AB3C00001F2A /* UserMiniInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMiniInfoModel.h; sourceTree = "<group>"; };
+		491C6E101F40AB3C00001F2A /* UserMiniInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMiniInfoModel.m; sourceTree = "<group>"; };
+		491C6E121F40AE6F00001F2A /* ImageInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfoModel.h; sourceTree = "<group>"; };
+		491C6E131F40AE6F00001F2A /* ImageInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfoModel.m; sourceTree = "<group>"; };
 		491FE8721F3EBC01002723DD /* ShareBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		491FE8761F3EBC01002723DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		491FE8781F3EBC01002723DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -201,6 +216,10 @@
 		49B7F1491F3EC4CC008EB320 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				491C6E091F40AAF300001F2A /* BookInfoRespModel.h */,
+				491C6E0A1F40AAF300001F2A /* BookInfoRespModel.m */,
+				491C6E0C1F40AB0700001F2A /* BookInfoModel.h */,
+				491C6E0D1F40AB0700001F2A /* BookInfoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,6 +319,12 @@
 		49B7F1551F3EC623008EB320 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				491C6E031F40AA7F00001F2A /* BaseRespModel.h */,
+				491C6E041F40AA7F00001F2A /* BaseRespModel.m */,
+				491C6E0F1F40AB3C00001F2A /* UserMiniInfoModel.h */,
+				491C6E101F40AB3C00001F2A /* UserMiniInfoModel.m */,
+				491C6E121F40AE6F00001F2A /* ImageInfoModel.h */,
+				491C6E131F40AE6F00001F2A /* ImageInfoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -468,13 +493,18 @@
 				49DADF181F400162005DD5F6 /* Utils.m in Sources */,
 				49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */,
 				495D2C6C1F3F722A0092790F /* LSNetWorkHelper.m in Sources */,
+				491C6E0B1F40AAF300001F2A /* BookInfoRespModel.m in Sources */,
+				491C6E141F40AE6F00001F2A /* ImageInfoModel.m in Sources */,
 				49B7F1631F3ECCE8008EB320 /* LSMessageViewController.m in Sources */,
 				49DADF1E1F4002DB005DD5F6 /* AppEngine.m in Sources */,
+				491C6E111F40AB3C00001F2A /* UserMiniInfoModel.m in Sources */,
 				49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */,
+				491C6E051F40AA7F00001F2A /* BaseRespModel.m in Sources */,
 				49DADF141F3FFE37005DD5F6 /* NetWorkErrorModel.m in Sources */,
 				495D2C661F3F70E00092790F /* LSNetWorkManager.m in Sources */,
 				491FE87A1F3EBC01002723DD /* AppDelegate.m in Sources */,
 				49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */,
+				491C6E0E1F40AB0700001F2A /* BookInfoModel.m in Sources */,
 				491FE8771F3EBC01002723DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,8 @@
 //
 
 #import "LSNetWorkManager.h"
+#import "LSNetWorkHelper.h"
+#import "BookInfoRespModel.h"
 
 @implementation LSNetWorkManager
 
@@ -24,6 +26,20 @@
 
 +(BOOL)isDevStatus{
     return YES;
+}
+
+
+
+-(void)getBookInfoWithBookId:(NSString *)bookId success:(void (^)(BookInfoRespModel *))success failure:(void (^)(NetWorkErrorModel *))failure{
+    
+    NSString* path = [NSString stringWithFormat:@"/v1.0/book/%@",bookId];
+    
+    [[LSNetWorkHelper shareInstance] getDataWithPath:path parameters:nil success:^(NSDictionary *dict) {
+        BookInfoRespModel* model = [BookInfoRespModel mj_objectWithKeyValues:dict];
+        success(model);
+    } failure:^(NetWorkErrorModel *netError) {
+        failure(netError);
+    }];
 }
 
 @end
