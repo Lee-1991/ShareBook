@@ -19,6 +19,9 @@
 		49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */; };
 		49B7F1631F3ECCE8008EB320 /* LSMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1621F3ECCE8008EB320 /* LSMessageViewController.m */; };
 		49B7F1661F3ECCF2008EB320 /* LSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1651F3ECCF2008EB320 /* LSMineViewController.m */; };
+		49DADF141F3FFE37005DD5F6 /* NetWorkErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DADF131F3FFE37005DD5F6 /* NetWorkErrorModel.m */; };
+		49DADF181F400162005DD5F6 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DADF171F400162005DD5F6 /* Utils.m */; };
+		49DADF1E1F4002DB005DD5F6 /* AppEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DADF1D1F4002DB005DD5F6 /* AppEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,12 @@
 		49B7F1651F3ECCF2008EB320 /* LSMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMineViewController.m; sourceTree = "<group>"; };
 		49DADF0E1F3FFBD1005DD5F6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		49DADF0F1F3FFCFB005DD5F6 /* LSGlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSGlobalHeader.h; sourceTree = "<group>"; };
+		49DADF121F3FFE37005DD5F6 /* NetWorkErrorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkErrorModel.h; sourceTree = "<group>"; };
+		49DADF131F3FFE37005DD5F6 /* NetWorkErrorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkErrorModel.m; sourceTree = "<group>"; };
+		49DADF161F400162005DD5F6 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		49DADF171F400162005DD5F6 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		49DADF1C1F4002DB005DD5F6 /* AppEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppEngine.h; sourceTree = "<group>"; };
+		49DADF1D1F4002DB005DD5F6 /* AppEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppEngine.m; sourceTree = "<group>"; };
 		C3E84C663A27BF6A0346195A /* Pods-ShareBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareBook/Pods-ShareBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,10 +125,9 @@
 		495D2C621F3F707D0092790F /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				495D2C641F3F70E00092790F /* LSNetWorkManager.h */,
-				495D2C651F3F70E00092790F /* LSNetWorkManager.m */,
-				495D2C6A1F3F722A0092790F /* LSNetWorkHelper.h */,
-				495D2C6B1F3F722A0092790F /* LSNetWorkHelper.m */,
+				49DADF151F3FFE4C005DD5F6 /* NetWork */,
+				49DADF1C1F4002DB005DD5F6 /* AppEngine.h */,
+				49DADF1D1F4002DB005DD5F6 /* AppEngine.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -127,6 +135,8 @@
 		495D2C631F3F707D0092790F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				49DADF161F400162005DD5F6 /* Utils.h */,
+				49DADF171F400162005DD5F6 /* Utils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -310,6 +320,19 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		49DADF151F3FFE4C005DD5F6 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				49DADF121F3FFE37005DD5F6 /* NetWorkErrorModel.h */,
+				49DADF131F3FFE37005DD5F6 /* NetWorkErrorModel.m */,
+				495D2C641F3F70E00092790F /* LSNetWorkManager.h */,
+				495D2C651F3F70E00092790F /* LSNetWorkManager.m */,
+				495D2C6A1F3F722A0092790F /* LSNetWorkHelper.h */,
+				495D2C6B1F3F722A0092790F /* LSNetWorkHelper.m */,
+			);
+			name = NetWork;
+			sourceTree = "<group>";
+		};
 		6CA83EE4C1FAA4F15E984BD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,10 +465,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				49B7F1661F3ECCF2008EB320 /* LSMineViewController.m in Sources */,
+				49DADF181F400162005DD5F6 /* Utils.m in Sources */,
 				49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */,
 				495D2C6C1F3F722A0092790F /* LSNetWorkHelper.m in Sources */,
 				49B7F1631F3ECCE8008EB320 /* LSMessageViewController.m in Sources */,
+				49DADF1E1F4002DB005DD5F6 /* AppEngine.m in Sources */,
 				49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */,
+				49DADF141F3FFE37005DD5F6 /* NetWorkErrorModel.m in Sources */,
 				495D2C661F3F70E00092790F /* LSNetWorkManager.m in Sources */,
 				491FE87A1F3EBC01002723DD /* AppDelegate.m in Sources */,
 				49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */,
