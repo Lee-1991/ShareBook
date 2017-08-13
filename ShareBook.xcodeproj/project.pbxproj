@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F7C71C6957D8F5BED0E3997 /* libPods-ShareBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FF83D27CCAEB8A798D5EEB /* libPods-ShareBook.a */; };
+		491FE8771F3EBC01002723DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 491FE8761F3EBC01002723DD /* main.m */; };
+		491FE87A1F3EBC01002723DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 491FE8791F3EBC01002723DD /* AppDelegate.m */; };
+		491FE8821F3EBC01002723DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491FE8811F3EBC01002723DD /* Assets.xcassets */; };
+		491FE8851F3EBC01002723DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491FE8831F3EBC01002723DD /* LaunchScreen.storyboard */; };
+		495D2C661F3F70E00092790F /* LSNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D2C651F3F70E00092790F /* LSNetWorkManager.m */; };
+		495D2C6C1F3F722A0092790F /* LSNetWorkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D2C6B1F3F722A0092790F /* LSNetWorkHelper.m */; };
+		49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1591F3ECACA008EB320 /* LSTabBarController.m */; };
+		49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */; };
+		49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */; };
+		49B7F1631F3ECCE8008EB320 /* LSMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1621F3ECCE8008EB320 /* LSMessageViewController.m */; };
+		49B7F1661F3ECCF2008EB320 /* LSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1651F3ECCF2008EB320 /* LSMineViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05C804EE3A26DE24C86F924A /* Pods-ShareBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareBook/Pods-ShareBook.debug.xcconfig"; sourceTree = "<group>"; };
+		47FF83D27CCAEB8A798D5EEB /* libPods-ShareBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		491FE8721F3EBC01002723DD /* ShareBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		491FE8761F3EBC01002723DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		491FE8781F3EBC01002723DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		491FE8791F3EBC01002723DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		491FE8811F3EBC01002723DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		491FE8841F3EBC01002723DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		491FE8861F3EBC01002723DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495D2C641F3F70E00092790F /* LSNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetWorkManager.h; sourceTree = "<group>"; };
+		495D2C651F3F70E00092790F /* LSNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNetWorkManager.m; sourceTree = "<group>"; };
+		495D2C6A1F3F722A0092790F /* LSNetWorkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetWorkHelper.h; sourceTree = "<group>"; };
+		495D2C6B1F3F722A0092790F /* LSNetWorkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNetWorkHelper.m; sourceTree = "<group>"; };
+		49B7F1581F3ECACA008EB320 /* LSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabBarController.h; sourceTree = "<group>"; };
+		49B7F1591F3ECACA008EB320 /* LSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabBarController.m; sourceTree = "<group>"; };
+		49B7F15B1F3ECCC5008EB320 /* LSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHomeViewController.h; sourceTree = "<group>"; };
+		49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSHomeViewController.m; sourceTree = "<group>"; };
+		49B7F15E1F3ECCD8008EB320 /* LSBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBookViewController.h; sourceTree = "<group>"; };
+		49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBookViewController.m; sourceTree = "<group>"; };
+		49B7F1611F3ECCE8008EB320 /* LSMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMessageViewController.h; sourceTree = "<group>"; };
+		49B7F1621F3ECCE8008EB320 /* LSMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMessageViewController.m; sourceTree = "<group>"; };
+		49B7F1641F3ECCF2008EB320 /* LSMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMineViewController.h; sourceTree = "<group>"; };
+		49B7F1651F3ECCF2008EB320 /* LSMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMineViewController.m; sourceTree = "<group>"; };
+		C3E84C663A27BF6A0346195A /* Pods-ShareBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareBook/Pods-ShareBook.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		491FE86F1F3EBC01002723DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F7C71C6957D8F5BED0E3997 /* libPods-ShareBook.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B4AD840E2996EE3D2EBE698 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05C804EE3A26DE24C86F924A /* Pods-ShareBook.debug.xcconfig */,
+				C3E84C663A27BF6A0346195A /* Pods-ShareBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		491FE8691F3EBC00002723DD = {
+			isa = PBXGroup;
+			children = (
+				491FE8741F3EBC01002723DD /* ShareBook */,
+				491FE8731F3EBC01002723DD /* Products */,
+				3B4AD840E2996EE3D2EBE698 /* Pods */,
+				6CA83EE4C1FAA4F15E984BD1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		491FE8731F3EBC01002723DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				491FE8721F3EBC01002723DD /* ShareBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		491FE8741F3EBC01002723DD /* ShareBook */ = {
+			isa = PBXGroup;
+			children = (
+				491FE8781F3EBC01002723DD /* AppDelegate.h */,
+				491FE8791F3EBC01002723DD /* AppDelegate.m */,
+				49B7F1431F3EC4CC008EB320 /* Class */,
+				491FE8811F3EBC01002723DD /* Assets.xcassets */,
+				491FE8831F3EBC01002723DD /* LaunchScreen.storyboard */,
+				491FE8861F3EBC01002723DD /* Info.plist */,
+				491FE8751F3EBC01002723DD /* Supporting Files */,
+			);
+			path = ShareBook;
+			sourceTree = "<group>";
+		};
+		491FE8751F3EBC01002723DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				491FE8761F3EBC01002723DD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		495D2C621F3F707D0092790F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				495D2C641F3F70E00092790F /* LSNetWorkManager.h */,
+				495D2C651F3F70E00092790F /* LSNetWorkManager.m */,
+				495D2C6A1F3F722A0092790F /* LSNetWorkHelper.h */,
+				495D2C6B1F3F722A0092790F /* LSNetWorkHelper.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		495D2C631F3F707D0092790F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		49B7F1431F3EC4CC008EB320 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				495D2C621F3F707D0092790F /* Manager */,
+				495D2C631F3F707D0092790F /* Utils */,
+				49B7F14C1F3EC4CC008EB320 /* Main */,
+				49B7F1481F3EC4CC008EB320 /* Home */,
+				49B7F1441F3EC4CC008EB320 /* Book */,
+				49B7F14D1F3EC4CC008EB320 /* Message */,
+				49B7F1511F3EC4CC008EB320 /* Mine */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		49B7F1441F3EC4CC008EB320 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				49B7F1471F3EC4CC008EB320 /* ViewController */,
+				49B7F1451F3EC4CC008EB320 /* Model */,
+				49B7F1461F3EC4CC008EB320 /* View */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		49B7F1451F3EC4CC008EB320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49B7F1461F3EC4CC008EB320 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49B7F1471F3EC4CC008EB320 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				49B7F15E1F3ECCD8008EB320 /* LSBookViewController.h */,
+				49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		49B7F1481F3EC4CC008EB320 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				49B7F14B1F3EC4CC008EB320 /* ViewController */,
+				49B7F1491F3EC4CC008EB320 /* Model */,
+				49B7F14A1F3EC4CC008EB320 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		49B7F1491F3EC4CC008EB320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49B7F14A1F3EC4CC008EB320 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49B7F14B1F3EC4CC008EB320 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				49B7F15B1F3ECCC5008EB320 /* LSHomeViewController.h */,
+				49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		49B7F14C1F3EC4CC008EB320 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				49B7F1571F3EC623008EB320 /* ViewController */,
+				49B7F1551F3EC623008EB320 /* Model */,
+				49B7F1561F3EC623008EB320 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		49B7F14D1F3EC4CC008EB320 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				49B7F1501F3EC4CC008EB320 /* ViewController */,
+				49B7F14E1F3EC4CC008EB320 /* Model */,
+				49B7F14F1F3EC4CC008EB320 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		49B7F14E1F3EC4CC008EB320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49B7F14F1F3EC4CC008EB320 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49B7F1501F3EC4CC008EB320 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				49B7F1611F3ECCE8008EB320 /* LSMessageViewController.h */,
+				49B7F1621F3ECCE8008EB320 /* LSMessageViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		49B7F1511F3EC4CC008EB320 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				49B7F1541F3EC4CC008EB320 /* ViewController */,
+				49B7F1521F3EC4CC008EB320 /* Model */,
+				49B7F1531F3EC4CC008EB320 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		49B7F1521F3EC4CC008EB320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49B7F1531F3EC4CC008EB320 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49B7F1541F3EC4CC008EB320 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				49B7F1641F3ECCF2008EB320 /* LSMineViewController.h */,
+				49B7F1651F3ECCF2008EB320 /* LSMineViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		49B7F1551F3EC623008EB320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49B7F1561F3EC623008EB320 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49B7F1571F3EC623008EB320 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				49B7F1581F3ECACA008EB320 /* LSTabBarController.h */,
+				49B7F1591F3ECACA008EB320 /* LSTabBarController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6CA83EE4C1FAA4F15E984BD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47FF83D27CCAEB8A798D5EEB /* libPods-ShareBook.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		491FE8711F3EBC01002723DD /* ShareBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 491FE8891F3EBC01002723DD /* Build configuration list for PBXNativeTarget "ShareBook" */;
+			buildPhases = (
+				0FBC283DB13791C67469C75E /* 📦 Check Pods Manifest.lock */,
+				491FE86E1F3EBC01002723DD /* Sources */,
+				491FE86F1F3EBC01002723DD /* Frameworks */,
+				491FE8701F3EBC01002723DD /* Resources */,
+				D00051ED230486CCBC5C5F01 /* 📦 Embed Pods Frameworks */,
+				C304D0D9A2105429589160E7 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareBook;
+			productName = ShareBook;
+			productReference = 491FE8721F3EBC01002723DD /* ShareBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		491FE86A1F3EBC01002723DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LS;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Lee;
+				TargetAttributes = {
+					491FE8711F3EBC01002723DD = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = RKLSMQ744J;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 491FE86D1F3EBC01002723DD /* Build configuration list for PBXProject "ShareBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 491FE8691F3EBC00002723DD;
+			productRefGroup = 491FE8731F3EBC01002723DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				491FE8711F3EBC01002723DD /* ShareBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		491FE8701F3EBC01002723DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491FE8851F3EBC01002723DD /* LaunchScreen.storyboard in Resources */,
+				491FE8821F3EBC01002723DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FBC283DB13791C67469C75E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C304D0D9A2105429589160E7 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareBook/Pods-ShareBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D00051ED230486CCBC5C5F01 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareBook/Pods-ShareBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		491FE86E1F3EBC01002723DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B7F1661F3ECCF2008EB320 /* LSMineViewController.m in Sources */,
+				49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */,
+				495D2C6C1F3F722A0092790F /* LSNetWorkHelper.m in Sources */,
+				49B7F1631F3ECCE8008EB320 /* LSMessageViewController.m in Sources */,
+				49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */,
+				495D2C661F3F70E00092790F /* LSNetWorkManager.m in Sources */,
+				491FE87A1F3EBC01002723DD /* AppDelegate.m in Sources */,
+				49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */,
+				491FE8771F3EBC01002723DD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		491FE8831F3EBC01002723DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				491FE8841F3EBC01002723DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		491FE8871F3EBC01002723DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		491FE8881F3EBC01002723DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		491FE88A1F3EBC01002723DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05C804EE3A26DE24C86F924A /* Pods-ShareBook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RKLSMQ744J;
+				INFOPLIST_FILE = ShareBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebeibook.sharebook.ShareBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		491FE88B1F3EBC01002723DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3E84C663A27BF6A0346195A /* Pods-ShareBook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RKLSMQ744J;
+				INFOPLIST_FILE = ShareBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebeibook.sharebook.ShareBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		491FE86D1F3EBC01002723DD /* Build configuration list for PBXProject "ShareBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491FE8871F3EBC01002723DD /* Debug */,
+				491FE8881F3EBC01002723DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		491FE8891F3EBC01002723DD /* Build configuration list for PBXNativeTarget "ShareBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491FE88A1F3EBC01002723DD /* Debug */,
+				491FE88B1F3EBC01002723DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 491FE86A1F3EBC01002723DD /* Project object */;
+}
