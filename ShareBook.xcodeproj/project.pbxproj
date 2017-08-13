@@ -45,6 +45,8 @@
 		49B7F1621F3ECCE8008EB320 /* LSMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMessageViewController.m; sourceTree = "<group>"; };
 		49B7F1641F3ECCF2008EB320 /* LSMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMineViewController.h; sourceTree = "<group>"; };
 		49B7F1651F3ECCF2008EB320 /* LSMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMineViewController.m; sourceTree = "<group>"; };
+		49DADF0E1F3FFBD1005DD5F6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		49DADF0F1F3FFCFB005DD5F6 /* LSGlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSGlobalHeader.h; sourceTree = "<group>"; };
 		C3E84C663A27BF6A0346195A /* Pods-ShareBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareBook/Pods-ShareBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				491FE8761F3EBC01002723DD /* main.m */,
+				49DADF0E1F3FFBD1005DD5F6 /* PrefixHeader.pch */,
+				49DADF0F1F3FFCFB005DD5F6 /* LSGlobalHeader.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -559,6 +563,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RKLSMQ744J;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ShareBook/PrefixHeader.pch";
 				INFOPLIST_FILE = ShareBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ebeibook.sharebook.ShareBook;
@@ -572,6 +578,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RKLSMQ744J;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ShareBook/PrefixHeader.pch";
 				INFOPLIST_FILE = ShareBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ebeibook.sharebook.ShareBook;
