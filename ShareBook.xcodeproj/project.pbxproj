@@ -13,6 +13,10 @@
 		491C6E0E1F40AB0700001F2A /* BookInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 491C6E0D1F40AB0700001F2A /* BookInfoModel.m */; };
 		491C6E111F40AB3C00001F2A /* UserMiniInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 491C6E101F40AB3C00001F2A /* UserMiniInfoModel.m */; };
 		491C6E141F40AE6F00001F2A /* ImageInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 491C6E131F40AE6F00001F2A /* ImageInfoModel.m */; };
+		491C6E171F40B6CB00001F2A /* TabModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 491C6E161F40B6CB00001F2A /* TabModel.m */; };
+		491C6E1D1F40B7C700001F2A /* SimpleRespModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 491C6E1C1F40B7C700001F2A /* SimpleRespModel.m */; };
+		491C6E211F40B81A00001F2A /* SendVCodelReqModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 491C6E201F40B81A00001F2A /* SendVCodelReqModel.m */; };
+		491C6E241F40BAB600001F2A /* CheckVcodeReqModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 491C6E231F40BAB600001F2A /* CheckVcodeReqModel.m */; };
 		491FE8771F3EBC01002723DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 491FE8761F3EBC01002723DD /* main.m */; };
 		491FE87A1F3EBC01002723DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 491FE8791F3EBC01002723DD /* AppDelegate.m */; };
 		491FE8821F3EBC01002723DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491FE8811F3EBC01002723DD /* Assets.xcassets */; };
@@ -42,6 +46,14 @@
 		491C6E101F40AB3C00001F2A /* UserMiniInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMiniInfoModel.m; sourceTree = "<group>"; };
 		491C6E121F40AE6F00001F2A /* ImageInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfoModel.h; sourceTree = "<group>"; };
 		491C6E131F40AE6F00001F2A /* ImageInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfoModel.m; sourceTree = "<group>"; };
+		491C6E151F40B6CB00001F2A /* TabModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabModel.h; sourceTree = "<group>"; };
+		491C6E161F40B6CB00001F2A /* TabModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabModel.m; sourceTree = "<group>"; };
+		491C6E1B1F40B7C700001F2A /* SimpleRespModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleRespModel.h; sourceTree = "<group>"; };
+		491C6E1C1F40B7C700001F2A /* SimpleRespModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleRespModel.m; sourceTree = "<group>"; };
+		491C6E1F1F40B81A00001F2A /* SendVCodelReqModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendVCodelReqModel.h; sourceTree = "<group>"; };
+		491C6E201F40B81A00001F2A /* SendVCodelReqModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendVCodelReqModel.m; sourceTree = "<group>"; };
+		491C6E221F40BAB600001F2A /* CheckVcodeReqModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckVcodeReqModel.h; sourceTree = "<group>"; };
+		491C6E231F40BAB600001F2A /* CheckVcodeReqModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckVcodeReqModel.m; sourceTree = "<group>"; };
 		491FE8721F3EBC01002723DD /* ShareBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		491FE8761F3EBC01002723DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		491FE8781F3EBC01002723DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +105,19 @@
 				C3E84C663A27BF6A0346195A /* Pods-ShareBook.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		491C6E1E1F40B7E900001F2A /* ReqModel */ = {
+			isa = PBXGroup;
+			children = (
+				49DADF121F3FFE37005DD5F6 /* NetWorkErrorModel.h */,
+				49DADF131F3FFE37005DD5F6 /* NetWorkErrorModel.m */,
+				491C6E1F1F40B81A00001F2A /* SendVCodelReqModel.h */,
+				491C6E201F40B81A00001F2A /* SendVCodelReqModel.m */,
+				491C6E221F40BAB600001F2A /* CheckVcodeReqModel.h */,
+				491C6E231F40BAB600001F2A /* CheckVcodeReqModel.m */,
+			);
+			name = ReqModel;
 			sourceTree = "<group>";
 		};
 		491FE8691F3EBC00002723DD = {
@@ -325,6 +350,10 @@
 				491C6E101F40AB3C00001F2A /* UserMiniInfoModel.m */,
 				491C6E121F40AE6F00001F2A /* ImageInfoModel.h */,
 				491C6E131F40AE6F00001F2A /* ImageInfoModel.m */,
+				491C6E151F40B6CB00001F2A /* TabModel.h */,
+				491C6E161F40B6CB00001F2A /* TabModel.m */,
+				491C6E1B1F40B7C700001F2A /* SimpleRespModel.h */,
+				491C6E1C1F40B7C700001F2A /* SimpleRespModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -348,8 +377,7 @@
 		49DADF151F3FFE4C005DD5F6 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				49DADF121F3FFE37005DD5F6 /* NetWorkErrorModel.h */,
-				49DADF131F3FFE37005DD5F6 /* NetWorkErrorModel.m */,
+				491C6E1E1F40B7E900001F2A /* ReqModel */,
 				495D2C641F3F70E00092790F /* LSNetWorkManager.h */,
 				495D2C651F3F70E00092790F /* LSNetWorkManager.m */,
 				495D2C6A1F3F722A0092790F /* LSNetWorkHelper.h */,
@@ -489,15 +517,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491C6E241F40BAB600001F2A /* CheckVcodeReqModel.m in Sources */,
+				491C6E1D1F40B7C700001F2A /* SimpleRespModel.m in Sources */,
 				49B7F1661F3ECCF2008EB320 /* LSMineViewController.m in Sources */,
 				49DADF181F400162005DD5F6 /* Utils.m in Sources */,
 				49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */,
+				491C6E171F40B6CB00001F2A /* TabModel.m in Sources */,
 				495D2C6C1F3F722A0092790F /* LSNetWorkHelper.m in Sources */,
 				491C6E0B1F40AAF300001F2A /* BookInfoRespModel.m in Sources */,
 				491C6E141F40AE6F00001F2A /* ImageInfoModel.m in Sources */,
 				49B7F1631F3ECCE8008EB320 /* LSMessageViewController.m in Sources */,
 				49DADF1E1F4002DB005DD5F6 /* AppEngine.m in Sources */,
 				491C6E111F40AB3C00001F2A /* UserMiniInfoModel.m in Sources */,
+				491C6E211F40B81A00001F2A /* SendVCodelReqModel.m in Sources */,
 				49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */,
 				491C6E051F40AA7F00001F2A /* BaseRespModel.m in Sources */,
 				49DADF141F3FFE37005DD5F6 /* NetWorkErrorModel.m in Sources */,

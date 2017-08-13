@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "NetWorkErrorModel.h"
 
-@class BookInfoRespModel;
+@class BookInfoRespModel,SimpleRespModel;
 
 /**
  滑动方向
@@ -45,6 +45,21 @@ typedef NS_ENUM(NSInteger,Slide)
 /**
  获取书籍信息
  */
-- (void)getBookInfoWithBookId:(NSString *)bookId success:(void (^)(BookInfoRespModel *model))success failure:(void (^)(NetWorkErrorModel *netError))failure;;
+- (void)getBookInfoWithBookId:(NSString *)bookId success:(void (^)(BookInfoRespModel *model))success failure:(void (^)(NetWorkErrorModel *netError))failure;
+
+/*****************************Post请求1.0*************************************/
+//MARK: Post请求1.0
+/**
+ 发送验证码
+ */
+- (void)postVcodeFrom:(NSString *)from mobile:(NSString *)mobile success:(void (^)(SimpleRespModel *model))success failure:(void (^)(NetWorkErrorModel *netError))failure;
+
+/*****************************Put请求1.0*************************************/
+//MARK: Put请求1.0
+
+/**
+ 校验验证码
+ */
+- (void)putCheckVcode:(NSString *)mobile vcode:(NSString *)vcode success:(void (^)(SimpleRespModel *model))success failure:(void (^)(NetWorkErrorModel *netError))failure;
 
 @end
