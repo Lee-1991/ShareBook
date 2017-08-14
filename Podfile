@@ -6,6 +6,6 @@ pod 'MJRefresh’,’~>3.1.0'
 pod 'SDWebImage’
 pod 'MJExtension'
 pod 'AFNetworking', '~> 3.0'
-
+pod 'Masonry'
 
 end
