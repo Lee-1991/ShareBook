@@ -24,3 +24,34 @@
 
 
 #import "LSGlobalHeader.h"
+
+/**
+ 系统字体
+ */
+#define FONT(x)  [UIFont systemFontOfSize:x]
+
+/**
+ 平方常规字体
+ */
+#define FONT_PingFang_Regular(x) [UIFont fontWithName:@"PingFang-SC-Regular" size:x]
+
+/**
+ 平芳细体字
+ */
+#define FONT_PingFang_SC_Light(x) [UIFont fontWithName:@"PingFang-SC-Light" size:x]
+
+/**
+ 平芳粗体
+ */
+#define FONT_PingFang_SC_Medium(x) [UIFont fontWithName:@"PingFang-SC-Medium" size:x]
+
+/**
+ 适配
+ */
+#define NormalMargin  10
+
+#define Fit_AccordingIS6_RATE    1
+
+#define ScreenW             [Utils getScreenWidth]
+#define ScreenH             [Utils getScreenHeight]
+

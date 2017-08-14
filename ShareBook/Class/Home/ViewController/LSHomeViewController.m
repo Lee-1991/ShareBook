@@ -5,10 +5,15 @@
 //  Created by Lee on 2017/8/12.
 //  Copyright © 2017年 Lee. All rights reserved.
 //
+//  借书
 
 #import "LSHomeViewController.h"
+#import "IndicatorTab.h"
+#import "MessagePage.h"
 
-@interface LSHomeViewController ()
+@interface LSHomeViewController ()<IndicatorTabDelegete,MessagePageDelegate,UITableViewDelegate,UITableViewDataSource>
+
+@property (strong,nonatomic) MessagePage *mTableView;
 
 @end
 
@@ -19,7 +24,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
     
-    
+    [self setupContentView];
     
 }
 
@@ -28,14 +33,54 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//MARK: IndicatorTabDelegete
+-(void)onIndicatorSelected:(int)index{
+    
 }
-*/
+
+//MARK: UItableView
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 2;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 0;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell* cell = [UITableViewCell new];
+    
+    return cell;
+    
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 0;
+}
+
+//MARK: MessagePageDelegate
+-(void)doRefresh{
+    [_mTableView comepleteRefreshAndLoadMore];
+}
+
+-(void)doLoadMore{
+    [_mTableView comepleteRefreshAndLoadMore];
+}
+
+-(void)setupContentView{
+    //
+    IndicatorTab* indicator = [[IndicatorTab alloc] initWithFrame:CGRectMake(0, 20, ScreenW, 44)];
+    [self.view addSubview:indicator];
+    indicator.mDelegate = self;
+    NSArray* items = [NSArray arrayWithObjects:@"距离",@"数量",@"优选",@"好友", nil];
+    [indicator setData:items];
+    
+    _mTableView = [[MessagePage alloc] initWithFrame:CGRectMake(0, 64, ScreenW, ScreenH - 64)];
+    [self.view addSubview:_mTableView];
+    _mTableView.mMessagePageDelegate = self;
+    _mTableView.dataSource = self;
+    _mTableView.delegate = self;
+}
 
 @end

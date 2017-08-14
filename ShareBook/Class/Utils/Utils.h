@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Utils : NSObject
 
@@ -26,6 +27,27 @@
  获取当前的版本号
  */
 + (int)bundleVersion;
+
++ (int) getScreenWidth;
+
++ (int) getScreenHeight;
+
++ (UIColor*) getUIColorFromHex : (unsigned) argb;
+
++ (void) removeAllChildren:(UIView*)view;
+
++ (CGSize)sizeWithString:(NSString *)_string andFont:(UIFont *)_font;
+
++ (CGSize)sizeWithString:(NSString *)_string andFont:(UIFont *)_font andBoundeSize:(CGSize)_size;
+
++ (UILabel*) getAutoWrapLabel : (UIFont*) font  text : (NSString*) _text;
+
++ (UILabel*) getAutoWrapLabel : (UIFont*) font  text : (NSString*) _text  width : (float) _width;
+
+
++ (UILabel*) getAutoWrapLabel : (UIFont*) font text : (NSString*) _text  size: (CGSize) _size;
+
++ (UIButton*)get3xAutoWrapButtonWithIconNormal:(UIImage*)_iconNormal iconHighlighted:(UIImage*)_iconHighlighted size:(CGSize)_size;
 
 
 @end

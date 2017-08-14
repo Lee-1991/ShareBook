@@ -44,16 +44,16 @@
     
     NSString* imgNameN = [NSString stringWithFormat:@"%@_normal",imgName];
     NSString* imgNameS = [NSString stringWithFormat:@"%@_select",imgName];
-//    vc.tabBarItem.title = title;
-//    vc.tabBarItem.image = [UIImage imageNamed:imgNameN];
-//    vc.tabBarItem.selectedImage = [UIImage imageNamed:imgNameS];
-
-    vc.title = title;
+    vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:imgNameN];
-    UINavigationController* navigation = [[UINavigationController alloc] initWithRootViewController:vc];
+    vc.tabBarItem.selectedImage = [UIImage imageNamed:imgNameS];
+
+//    vc.title = title;
+//    vc.tabBarItem.image = [UIImage imageNamed:imgNameN];
+//    UINavigationController* navigation = [[UINavigationController alloc] initWithRootViewController:vc];
     
     
-    [self addChildViewController:navigation];
+    [self addChildViewController:vc];
 }
 
 @end

@@ -28,6 +28,9 @@
 		49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */; };
 		49B7F1631F3ECCE8008EB320 /* LSMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1621F3ECCE8008EB320 /* LSMessageViewController.m */; };
 		49B7F1661F3ECCF2008EB320 /* LSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1651F3ECCF2008EB320 /* LSMineViewController.m */; };
+		49CB82021F41DD430053A75E /* IndicatorTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB82011F41DD430053A75E /* IndicatorTab.m */; };
+		49CB82051F41E5310053A75E /* MessagePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB82041F41E5310053A75E /* MessagePage.m */; };
+		49CB82081F41EC710053A75E /* LSBorrowBookCellTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB82071F41EC710053A75E /* LSBorrowBookCellTopView.m */; };
 		49DADF141F3FFE37005DD5F6 /* NetWorkErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DADF131F3FFE37005DD5F6 /* NetWorkErrorModel.m */; };
 		49DADF181F400162005DD5F6 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DADF171F400162005DD5F6 /* Utils.m */; };
 		49DADF1E1F4002DB005DD5F6 /* AppEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DADF1D1F4002DB005DD5F6 /* AppEngine.m */; };
@@ -75,6 +78,12 @@
 		49B7F1621F3ECCE8008EB320 /* LSMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMessageViewController.m; sourceTree = "<group>"; };
 		49B7F1641F3ECCF2008EB320 /* LSMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMineViewController.h; sourceTree = "<group>"; };
 		49B7F1651F3ECCF2008EB320 /* LSMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMineViewController.m; sourceTree = "<group>"; };
+		49CB82001F41DD430053A75E /* IndicatorTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndicatorTab.h; sourceTree = "<group>"; };
+		49CB82011F41DD430053A75E /* IndicatorTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndicatorTab.m; sourceTree = "<group>"; };
+		49CB82031F41E5310053A75E /* MessagePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePage.h; sourceTree = "<group>"; };
+		49CB82041F41E5310053A75E /* MessagePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagePage.m; sourceTree = "<group>"; };
+		49CB82061F41EC710053A75E /* LSBorrowBookCellTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBorrowBookCellTopView.h; sourceTree = "<group>"; };
+		49CB82071F41EC710053A75E /* LSBorrowBookCellTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBorrowBookCellTopView.m; sourceTree = "<group>"; };
 		49DADF0E1F3FFBD1005DD5F6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		49DADF0F1F3FFCFB005DD5F6 /* LSGlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSGlobalHeader.h; sourceTree = "<group>"; };
 		49DADF121F3FFE37005DD5F6 /* NetWorkErrorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkErrorModel.h; sourceTree = "<group>"; };
@@ -187,21 +196,22 @@
 				495D2C621F3F707D0092790F /* Manager */,
 				495D2C631F3F707D0092790F /* Utils */,
 				49B7F14C1F3EC4CC008EB320 /* Main */,
-				49B7F1481F3EC4CC008EB320 /* Home */,
-				49B7F1441F3EC4CC008EB320 /* Book */,
-				49B7F14D1F3EC4CC008EB320 /* Message */,
-				49B7F1511F3EC4CC008EB320 /* Mine */,
+				49B7F1481F3EC4CC008EB320 /* Home(借书) */,
+				49B7F1441F3EC4CC008EB320 /* Book(取书) */,
+				49B7F14D1F3EC4CC008EB320 /* Message(消息) */,
+				49B7F1511F3EC4CC008EB320 /* Mine(我的) */,
 			);
 			path = Class;
 			sourceTree = "<group>";
 		};
-		49B7F1441F3EC4CC008EB320 /* Book */ = {
+		49B7F1441F3EC4CC008EB320 /* Book(取书) */ = {
 			isa = PBXGroup;
 			children = (
 				49B7F1471F3EC4CC008EB320 /* ViewController */,
 				49B7F1451F3EC4CC008EB320 /* Model */,
 				49B7F1461F3EC4CC008EB320 /* View */,
 			);
+			name = "Book(取书)";
 			path = Book;
 			sourceTree = "<group>";
 		};
@@ -228,13 +238,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		49B7F1481F3EC4CC008EB320 /* Home */ = {
+		49B7F1481F3EC4CC008EB320 /* Home(借书) */ = {
 			isa = PBXGroup;
 			children = (
 				49B7F14B1F3EC4CC008EB320 /* ViewController */,
 				49B7F1491F3EC4CC008EB320 /* Model */,
 				49B7F14A1F3EC4CC008EB320 /* View */,
 			);
+			name = "Home(借书)";
 			path = Home;
 			sourceTree = "<group>";
 		};
@@ -252,6 +263,8 @@
 		49B7F14A1F3EC4CC008EB320 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				49CB82061F41EC710053A75E /* LSBorrowBookCellTopView.h */,
+				49CB82071F41EC710053A75E /* LSBorrowBookCellTopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,13 +288,14 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		49B7F14D1F3EC4CC008EB320 /* Message */ = {
+		49B7F14D1F3EC4CC008EB320 /* Message(消息) */ = {
 			isa = PBXGroup;
 			children = (
 				49B7F1501F3EC4CC008EB320 /* ViewController */,
 				49B7F14E1F3EC4CC008EB320 /* Model */,
 				49B7F14F1F3EC4CC008EB320 /* View */,
 			);
+			name = "Message(消息)";
 			path = Message;
 			sourceTree = "<group>";
 		};
@@ -308,13 +322,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		49B7F1511F3EC4CC008EB320 /* Mine */ = {
+		49B7F1511F3EC4CC008EB320 /* Mine(我的) */ = {
 			isa = PBXGroup;
 			children = (
 				49B7F1541F3EC4CC008EB320 /* ViewController */,
 				49B7F1521F3EC4CC008EB320 /* Model */,
 				49B7F1531F3EC4CC008EB320 /* View */,
 			);
+			name = "Mine(我的)";
 			path = Mine;
 			sourceTree = "<group>";
 		};
@@ -361,6 +376,10 @@
 		49B7F1561F3EC623008EB320 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				49CB82031F41E5310053A75E /* MessagePage.h */,
+				49CB82041F41E5310053A75E /* MessagePage.m */,
+				49CB82001F41DD430053A75E /* IndicatorTab.h */,
+				49CB82011F41DD430053A75E /* IndicatorTab.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -423,7 +442,7 @@
 		491FE86A1F3EBC01002723DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = LS;
+				CLASSPREFIX = SB;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Lee;
 				TargetAttributes = {
@@ -521,6 +540,7 @@
 				491C6E1D1F40B7C700001F2A /* SimpleRespModel.m in Sources */,
 				49B7F1661F3ECCF2008EB320 /* LSMineViewController.m in Sources */,
 				49DADF181F400162005DD5F6 /* Utils.m in Sources */,
+				49CB82051F41E5310053A75E /* MessagePage.m in Sources */,
 				49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */,
 				491C6E171F40B6CB00001F2A /* TabModel.m in Sources */,
 				495D2C6C1F3F722A0092790F /* LSNetWorkHelper.m in Sources */,
@@ -534,10 +554,12 @@
 				491C6E051F40AA7F00001F2A /* BaseRespModel.m in Sources */,
 				49DADF141F3FFE37005DD5F6 /* NetWorkErrorModel.m in Sources */,
 				495D2C661F3F70E00092790F /* LSNetWorkManager.m in Sources */,
+				49CB82021F41DD430053A75E /* IndicatorTab.m in Sources */,
 				491FE87A1F3EBC01002723DD /* AppDelegate.m in Sources */,
 				49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */,
 				491C6E0E1F40AB0700001F2A /* BookInfoModel.m in Sources */,
 				491FE8771F3EBC01002723DD /* main.m in Sources */,
+				49CB82081F41EC710053A75E /* LSBorrowBookCellTopView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
