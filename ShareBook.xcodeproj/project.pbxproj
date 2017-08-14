@@ -26,6 +26,7 @@
 		4978EDB91F41EDDD0072D08A /* SBBorrowBookCellTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4978EDB81F41EDDD0072D08A /* SBBorrowBookCellTopView.xib */; };
 		4978EDBC1F41EE010072D08A /* SBBorrowBookCellTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4978EDBB1F41EE010072D08A /* SBBorrowBookCellTopView.m */; };
 		4978EDBF1F41F6E50072D08A /* SBBorrowBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4978EDBE1F41F6E50072D08A /* SBBorrowBookCell.m */; };
+		4978EDC21F4204860072D08A /* SBBookInfoCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4978EDC11F4204860072D08A /* SBBookInfoCollectionCell.m */; };
 		49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1591F3ECACA008EB320 /* LSTabBarController.m */; };
 		49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */; };
 		49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */; };
@@ -75,6 +76,8 @@
 		4978EDBB1F41EE010072D08A /* SBBorrowBookCellTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBorrowBookCellTopView.m; sourceTree = "<group>"; };
 		4978EDBD1F41F6E50072D08A /* SBBorrowBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBorrowBookCell.h; sourceTree = "<group>"; };
 		4978EDBE1F41F6E50072D08A /* SBBorrowBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBorrowBookCell.m; sourceTree = "<group>"; };
+		4978EDC01F4204860072D08A /* SBBookInfoCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBookInfoCollectionCell.h; sourceTree = "<group>"; };
+		4978EDC11F4204860072D08A /* SBBookInfoCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBookInfoCollectionCell.m; sourceTree = "<group>"; };
 		49B7F1581F3ECACA008EB320 /* LSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabBarController.h; sourceTree = "<group>"; };
 		49B7F1591F3ECACA008EB320 /* LSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabBarController.m; sourceTree = "<group>"; };
 		49B7F15B1F3ECCC5008EB320 /* LSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHomeViewController.h; sourceTree = "<group>"; };
@@ -268,11 +271,13 @@
 		49B7F14A1F3EC4CC008EB320 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4978EDBD1F41F6E50072D08A /* SBBorrowBookCell.h */,
+				4978EDBE1F41F6E50072D08A /* SBBorrowBookCell.m */,
 				4978EDBA1F41EE010072D08A /* SBBorrowBookCellTopView.h */,
 				4978EDBB1F41EE010072D08A /* SBBorrowBookCellTopView.m */,
 				4978EDB81F41EDDD0072D08A /* SBBorrowBookCellTopView.xib */,
-				4978EDBD1F41F6E50072D08A /* SBBorrowBookCell.h */,
-				4978EDBE1F41F6E50072D08A /* SBBorrowBookCell.m */,
+				4978EDC01F4204860072D08A /* SBBookInfoCollectionCell.h */,
+				4978EDC11F4204860072D08A /* SBBookInfoCollectionCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -558,6 +563,7 @@
 				491C6E0B1F40AAF300001F2A /* BookInfoRespModel.m in Sources */,
 				491C6E141F40AE6F00001F2A /* ImageInfoModel.m in Sources */,
 				49B7F1631F3ECCE8008EB320 /* LSMessageViewController.m in Sources */,
+				4978EDC21F4204860072D08A /* SBBookInfoCollectionCell.m in Sources */,
 				49DADF1E1F4002DB005DD5F6 /* AppEngine.m in Sources */,
 				491C6E111F40AB3C00001F2A /* UserMiniInfoModel.m in Sources */,
 				491C6E211F40B81A00001F2A /* SendVCodelReqModel.m in Sources */,
