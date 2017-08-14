@@ -10,6 +10,7 @@
 #import "LSHomeViewController.h"
 #import "IndicatorTab.h"
 #import "MessagePage.h"
+#import "SBBorrowBookCell.h"
 
 @interface LSHomeViewController ()<IndicatorTabDelegete,MessagePageDelegate,UITableViewDelegate,UITableViewDataSource>
 
@@ -40,23 +41,26 @@
 
 //MARK: UItableView
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 2;
+    return 1;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
+    return 10;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    UITableViewCell* cell = [UITableViewCell new];
+    static NSString* cellId = @"borrowBookCell";
+    SBBorrowBookCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell == nil) {
+        cell = [[SBBorrowBookCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+    }
     
     return cell;
     
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 0;
+    return [SBBorrowBookCell heightOfCell];
 }
 
 //MARK: MessagePageDelegate

@@ -23,6 +23,9 @@
 		491FE8851F3EBC01002723DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491FE8831F3EBC01002723DD /* LaunchScreen.storyboard */; };
 		495D2C661F3F70E00092790F /* LSNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D2C651F3F70E00092790F /* LSNetWorkManager.m */; };
 		495D2C6C1F3F722A0092790F /* LSNetWorkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D2C6B1F3F722A0092790F /* LSNetWorkHelper.m */; };
+		4978EDB91F41EDDD0072D08A /* SBBorrowBookCellTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4978EDB81F41EDDD0072D08A /* SBBorrowBookCellTopView.xib */; };
+		4978EDBC1F41EE010072D08A /* SBBorrowBookCellTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4978EDBB1F41EE010072D08A /* SBBorrowBookCellTopView.m */; };
+		4978EDBF1F41F6E50072D08A /* SBBorrowBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4978EDBE1F41F6E50072D08A /* SBBorrowBookCell.m */; };
 		49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1591F3ECACA008EB320 /* LSTabBarController.m */; };
 		49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */; };
 		49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */; };
@@ -30,7 +33,6 @@
 		49B7F1661F3ECCF2008EB320 /* LSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1651F3ECCF2008EB320 /* LSMineViewController.m */; };
 		49CB82021F41DD430053A75E /* IndicatorTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB82011F41DD430053A75E /* IndicatorTab.m */; };
 		49CB82051F41E5310053A75E /* MessagePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB82041F41E5310053A75E /* MessagePage.m */; };
-		49CB82081F41EC710053A75E /* LSBorrowBookCellTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB82071F41EC710053A75E /* LSBorrowBookCellTopView.m */; };
 		49DADF141F3FFE37005DD5F6 /* NetWorkErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DADF131F3FFE37005DD5F6 /* NetWorkErrorModel.m */; };
 		49DADF181F400162005DD5F6 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DADF171F400162005DD5F6 /* Utils.m */; };
 		49DADF1E1F4002DB005DD5F6 /* AppEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DADF1D1F4002DB005DD5F6 /* AppEngine.m */; };
@@ -68,6 +70,11 @@
 		495D2C651F3F70E00092790F /* LSNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNetWorkManager.m; sourceTree = "<group>"; };
 		495D2C6A1F3F722A0092790F /* LSNetWorkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetWorkHelper.h; sourceTree = "<group>"; };
 		495D2C6B1F3F722A0092790F /* LSNetWorkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNetWorkHelper.m; sourceTree = "<group>"; };
+		4978EDB81F41EDDD0072D08A /* SBBorrowBookCellTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBBorrowBookCellTopView.xib; sourceTree = "<group>"; };
+		4978EDBA1F41EE010072D08A /* SBBorrowBookCellTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBorrowBookCellTopView.h; sourceTree = "<group>"; };
+		4978EDBB1F41EE010072D08A /* SBBorrowBookCellTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBorrowBookCellTopView.m; sourceTree = "<group>"; };
+		4978EDBD1F41F6E50072D08A /* SBBorrowBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBorrowBookCell.h; sourceTree = "<group>"; };
+		4978EDBE1F41F6E50072D08A /* SBBorrowBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBorrowBookCell.m; sourceTree = "<group>"; };
 		49B7F1581F3ECACA008EB320 /* LSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabBarController.h; sourceTree = "<group>"; };
 		49B7F1591F3ECACA008EB320 /* LSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabBarController.m; sourceTree = "<group>"; };
 		49B7F15B1F3ECCC5008EB320 /* LSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHomeViewController.h; sourceTree = "<group>"; };
@@ -82,8 +89,6 @@
 		49CB82011F41DD430053A75E /* IndicatorTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndicatorTab.m; sourceTree = "<group>"; };
 		49CB82031F41E5310053A75E /* MessagePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePage.h; sourceTree = "<group>"; };
 		49CB82041F41E5310053A75E /* MessagePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagePage.m; sourceTree = "<group>"; };
-		49CB82061F41EC710053A75E /* LSBorrowBookCellTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBorrowBookCellTopView.h; sourceTree = "<group>"; };
-		49CB82071F41EC710053A75E /* LSBorrowBookCellTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBorrowBookCellTopView.m; sourceTree = "<group>"; };
 		49DADF0E1F3FFBD1005DD5F6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		49DADF0F1F3FFCFB005DD5F6 /* LSGlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSGlobalHeader.h; sourceTree = "<group>"; };
 		49DADF121F3FFE37005DD5F6 /* NetWorkErrorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkErrorModel.h; sourceTree = "<group>"; };
@@ -263,8 +268,11 @@
 		49B7F14A1F3EC4CC008EB320 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				49CB82061F41EC710053A75E /* LSBorrowBookCellTopView.h */,
-				49CB82071F41EC710053A75E /* LSBorrowBookCellTopView.m */,
+				4978EDBA1F41EE010072D08A /* SBBorrowBookCellTopView.h */,
+				4978EDBB1F41EE010072D08A /* SBBorrowBookCellTopView.m */,
+				4978EDB81F41EDDD0072D08A /* SBBorrowBookCellTopView.xib */,
+				4978EDBD1F41F6E50072D08A /* SBBorrowBookCell.h */,
+				4978EDBE1F41F6E50072D08A /* SBBorrowBookCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -477,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				491FE8851F3EBC01002723DD /* LaunchScreen.storyboard in Resources */,
+				4978EDB91F41EDDD0072D08A /* SBBorrowBookCellTopView.xib in Resources */,
 				491FE8821F3EBC01002723DD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,9 +550,11 @@
 				49B7F1661F3ECCF2008EB320 /* LSMineViewController.m in Sources */,
 				49DADF181F400162005DD5F6 /* Utils.m in Sources */,
 				49CB82051F41E5310053A75E /* MessagePage.m in Sources */,
+				4978EDBC1F41EE010072D08A /* SBBorrowBookCellTopView.m in Sources */,
 				49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */,
 				491C6E171F40B6CB00001F2A /* TabModel.m in Sources */,
 				495D2C6C1F3F722A0092790F /* LSNetWorkHelper.m in Sources */,
+				4978EDBF1F41F6E50072D08A /* SBBorrowBookCell.m in Sources */,
 				491C6E0B1F40AAF300001F2A /* BookInfoRespModel.m in Sources */,
 				491C6E141F40AE6F00001F2A /* ImageInfoModel.m in Sources */,
 				49B7F1631F3ECCE8008EB320 /* LSMessageViewController.m in Sources */,
@@ -559,7 +570,6 @@
 				49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */,
 				491C6E0E1F40AB0700001F2A /* BookInfoModel.m in Sources */,
 				491FE8771F3EBC01002723DD /* main.m in Sources */,
-				49CB82081F41EC710053A75E /* LSBorrowBookCellTopView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

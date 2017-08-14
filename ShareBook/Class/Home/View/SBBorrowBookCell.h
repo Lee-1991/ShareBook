@@ -1,5 +1,5 @@
 //
-//  LSBorrowBookCellTopView.h
+//  SBBorrowBookCell.h
 //  ShareBook
 //
 //  Created by Lee on 2017/8/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LSBorrowBookCellTopView : UITableViewCell
+@interface SBBorrowBookCell : UITableViewCell
+
++(CGFloat)heightOfCell;
 
 @end
