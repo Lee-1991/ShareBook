@@ -28,7 +28,7 @@
 }
 
 +(CGSize)sizeOfCell{
-    CGSize size = CGSizeMake((ScreenW - 10*3 - 10*2)/4, 120);
+    CGSize size = CGSizeMake((ScreenW - 10*3 - 10*2)/4, 130);
     
     return size;
 }
@@ -42,20 +42,20 @@
         make.left.equalTo(self.mas_left);
         make.top.equalTo(self.mas_top);
         make.right.equalTo(self.mas_right);
-        make.height.mas_equalTo(100);
+        make.height.mas_equalTo(109);
     }];
     
     _mTitleLbl = [[UILabel alloc] init];
     [self addSubview:_mTitleLbl];
     _mTitleLbl.font = FONT(12);
-    _mTitleLbl.tintColor = [UIColor lightGrayColor];
+    _mTitleLbl.tintColor = [Utils getUIColorFromHex:0xff424242];
     _mTitleLbl.text = @"明朝那些事儿";
     _mTitleLbl.textAlignment = NSTextAlignmentCenter;
     [_mTitleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.mas_centerX);
         make.left.equalTo(self.mas_left);
         make.right.equalTo(self.mas_right);
-        make.top.equalTo(self.mCoverImgView.mas_bottom).offset(8);
+        make.top.equalTo(self.mCoverImgView.mas_bottom).offset(5);
     }];
 }
 

@@ -36,17 +36,17 @@
 {
     mDataArray = [[NSMutableArray alloc] init];
     self.mSelectedFont = FONT(14);
-    self.mNormalFont = FONT(12);
+    self.mNormalFont = FONT(14);
     
-    self.mNormalColor = [Utils getUIColorFromHex:0xff8f8f8f];
-    self.mSelectColor = [Utils getUIColorFromHex:0xfffbbc0e];
+    self.mNormalColor = [Utils getUIColorFromHex:0xff999999];
+    self.mSelectColor = [Utils getUIColorFromHex:0xff00bdfd];
     
     self.mContentVerticalAlignment =UIControlContentVerticalAlignmentCenter;
     self.mBottomOffset = 8;
     
     self.mRightOffset = 2*NormalMargin;
     
-    self.mSelectLineColor = [UIColor colorWithRed:1 green:184/255.f blue:0 alpha:1];//选中项下划线默认色
+    self.mSelectLineColor = [Utils getUIColorFromHex:0xff00bdfd];//选中项下划线默认色
     
 }
 
@@ -122,10 +122,10 @@
             mSelectedLine = [[UIView alloc] init];
             mSelectedLine.backgroundColor = _mSelectLineColor;
             [self addSubview:mSelectedLine];
-            
-            CGSize size = [Utils sizeWithString:tabBtn.titleLabel.text andFont:self.mSelectedFont];
+//            
+//            CGSize size = [Utils sizeWithString:tabBtn.titleLabel.text andFont:self.mSelectedFont];
             CGRect rect = mSelectedLine.frame;
-            rect.size.width = size.width;
+            rect.size.width = 12;
             rect.size.height = 2;
             rect.origin.y = tabBtn.frame.size.height - 2;
             rect.origin.x = tabBtn.center.x - rect.size.width * 0.5;
@@ -217,9 +217,9 @@
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             
                 //移动下滑线
-                CGSize size = [Utils sizeWithString:btn.titleLabel.text andFont:self.mSelectedFont];
+//                CGSize size = [Utils sizeWithString:btn.titleLabel.text andFont:self.mSelectedFont];
                 CGRect rect = mSelectedLine.frame;
-                rect.size.width = size.width;
+                rect.size.width = 12;
                 rect.origin.x = btn.center.x - rect.size.width * 0.5;
                 //动画效果
                 [UIView beginAnimations:nil context:nil];
