@@ -72,10 +72,10 @@
     mEmptyImageView = [[UIImageView alloc]initWithImage:mEmptyImg];
     rect = mEmptyImageView.frame;
     
-    rect.origin.x = (ScreenW - mEmptyImg.size.width/2*Fit_AccordingIS6_RATE)/2;
-    rect.origin.y = (ScreenH - mEmptyImg.size.height/2*Fit_AccordingIS6_RATE)/2 - NormalMargin * 5;
-    rect.size.width = mEmptyImg.size.width/2*Fit_AccordingIS6_RATE;
-    rect.size.height = mEmptyImg.size.height /2*Fit_AccordingIS6_RATE;
+    rect.origin.x = (ScreenW - mEmptyImg.size.width/2*Fit_RATE)/2;
+    rect.origin.y = (ScreenH - mEmptyImg.size.height/2*Fit_RATE)/2 - NormalMargin * 5;
+    rect.size.width = mEmptyImg.size.width/2*Fit_RATE;
+    rect.size.height = mEmptyImg.size.height /2*Fit_RATE;
     mEmptyImageView.frame = rect;
     mEmptyImageView.hidden = YES;
     mEmptyImageView.userInteractionEnabled = NO;
@@ -84,10 +84,10 @@
     
     //点击重试
     UIImage* reTryImg = [UIImage imageNamed:@"empty_network"];
-    mRetryBtn = [Utils get3xAutoWrapButtonWithIconNormal:reTryImg iconHighlighted:nil size:CGSizeMake(reTryImg.size.width/2*Fit_AccordingIS6_RATE, reTryImg.size.height/2*Fit_AccordingIS6_RATE)];
+    mRetryBtn = [Utils get3xAutoWrapButtonWithIconNormal:reTryImg iconHighlighted:nil size:CGSizeMake(reTryImg.size.width/2*Fit_RATE, reTryImg.size.height/2*Fit_RATE)];
     
-    rect.origin.x = (ScreenW - reTryImg.size.width/2*Fit_AccordingIS6_RATE)/2;
-    rect.origin.y = (ScreenH - reTryImg.size.height/2*Fit_AccordingIS6_RATE)/2 - NormalMargin * 5;
+    rect.origin.x = (ScreenW - reTryImg.size.width/2*Fit_RATE)/2;
+    rect.origin.y = (ScreenH - reTryImg.size.height/2*Fit_RATE)/2 - NormalMargin * 5;
     mRetryBtn.frame = rect;
 
     mRetryBtn.hidden = YES;
@@ -225,10 +225,10 @@
     mEmptyImg = [UIImage imageNamed:imageName];
     mEmptyImageView.image = mEmptyImg;
     CGRect rect = mEmptyImageView.frame;
-    rect.origin.x = (ScreenW - mEmptyImg.size.width/2*Fit_AccordingIS6_RATE)/2;
-    rect.origin.y = (ScreenH - mEmptyImg.size.height/2*Fit_AccordingIS6_RATE)/2 - NormalMargin * 5;
-    rect.size.width = mEmptyImg.size.width/2*Fit_AccordingIS6_RATE;
-    rect.size.height = mEmptyImg.size.height /2*Fit_AccordingIS6_RATE;
+    rect.origin.x = (ScreenW - mEmptyImg.size.width/2*Fit_RATE)/2;
+    rect.origin.y = (ScreenH - mEmptyImg.size.height/2*Fit_RATE)/2 - NormalMargin * 5;
+    rect.size.width = mEmptyImg.size.width/2*Fit_RATE;
+    rect.size.height = mEmptyImg.size.height /2*Fit_RATE;
     mEmptyImageView.frame = rect;
     mEmptyImageView.hidden = YES;
 }

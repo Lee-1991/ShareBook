@@ -50,8 +50,13 @@
  */
 #define NormalMargin  10
 
-#define Fit_AccordingIS6_RATE    1
+#define Fit_RATE    1
 
 #define ScreenW             [Utils getScreenWidth]
 #define ScreenH             [Utils getScreenHeight]
+
+/**
+ 占位图颜色
+ */
+#define ColorPlaceHolder [Utils getUIColorFromHex:0xff999999]
 

@@ -10,6 +10,7 @@
 
 @interface SBBorrowBookCellTopView : UIView
 
-+ (instancetype)borrowBookCellTopView;
++ (CGFloat)heightOfCellTopView;
+
 
 @end

@@ -93,8 +93,7 @@ static NSString* kBookInfoCellId = @"kBookInfoCellId";
 
 -(void)setUpContentView{
     
-    _mTopView = [SBBorrowBookCellTopView borrowBookCellTopView];
-    _mTopView.frame = CGRectMake(0, 0, ScreenW, 50);
+    _mTopView = [[SBBorrowBookCellTopView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, [SBBorrowBookCellTopView heightOfCellTopView])];
 //    _mTopView.backgroundColor = [UIColor lightGrayColor];
 //    self.backgroundColor = [UIColor whiteColor];
     [self addSubview:_mTopView];
@@ -113,7 +112,7 @@ static NSString* kBookInfoCellId = @"kBookInfoCellId";
         make.left.equalTo(self.mas_left).offset(10);
         make.height.mas_equalTo(height);
         make.width.mas_equalTo(width);
-        make.bottom.equalTo(self.mas_bottom).offset(0*Fit_AccordingIS6_RATE);
+        make.bottom.equalTo(self.mas_bottom).offset(0*Fit_RATE);
     }];
     _mBookView.backgroundColor = [UIColor clearColor];
     _mBookView.showsHorizontalScrollIndicator = NO;
