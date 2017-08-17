@@ -10,6 +10,8 @@
 
 @interface SBBorrowBookCellTopView : UIView
 
+@property (strong,nonatomic) UILabel *mCountLbl;
+
 + (CGFloat)heightOfCellTopView;
 
 

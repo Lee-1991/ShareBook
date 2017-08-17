@@ -7,11 +7,11 @@
 //
 
 #import "SBBookDetailVC.h"
-#import "SBBorrowBookCellTopView.h"
+#import "SBBookDetailInfoView.h"
 
 @interface SBBookDetailVC ()
 
-@property (strong,nonatomic) SBBorrowBookCellTopView *mTopView;
+@property (strong,nonatomic) SBBookDetailInfoView *mBookInfoView;
 
 @end
 
@@ -32,12 +32,12 @@
 
 
 -(void)setupContentView{
-    _mTopView = [[SBBorrowBookCellTopView alloc] init];
-    [self.view addSubview:_mTopView];
-    [_mTopView mas_makeConstraints:^(MASConstraintMaker *make) {
+    _mBookInfoView = [[SBBookDetailInfoView alloc] init];
+    [self.view addSubview:_mBookInfoView];
+    [_mBookInfoView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view.mas_left);
         make.top.equalTo(self.mHeaderView.mas_bottom);
-        make.size.mas_equalTo(CGSizeMake(ScreenW, [SBBorrowBookCellTopView heightOfCellTopView]));
+        make.size.mas_equalTo(CGSizeMake(ScreenW, 217*Fit_RATE));
     }];
     
     
