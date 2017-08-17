@@ -63,6 +63,10 @@
     return [SBBorrowBookCell heightOfCell];
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [[SBPageJumpManager shareInstance] pushToUserInfoVCWithUid:1111];
+}
+
 //MARK: MessagePageDelegate
 -(void)doRefresh{
     [_mTableView comepleteRefreshAndLoadMore];

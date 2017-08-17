@@ -132,18 +132,18 @@
 //获取签名
 -(NSString *)getSignStringHttpMethod:(NSString*)method path:(NSString *)path query:(NSString *)query timestamp:(NSString *)ts appSecert:(NSString *)secert
 {
-    NSInteger userId = [AppEngine shareInstance].mUserId > 0 ? [AppEngine shareInstance].mUserId : 1;
+    UInt64 userId = [AppEngine shareInstance].mUserId > 0 ? [AppEngine shareInstance].mUserId : 1;
     NSString* sid = [AppEngine shareInstance].mSid == nil? @"":[AppEngine shareInstance].mSid;
     
     NSString* src = nil;
     
     if (![Utils isEmpty:query])
     {
-        src = [NSString stringWithFormat:@"%@%@%ld%@%@%@%@",method,path,(long)userId,sid,query,ts,secert];
+        src = [NSString stringWithFormat:@"%@%@%llu%@%@%@%@",method,path,userId,sid,query,ts,secert];
     }
     else
     {
-        src = [NSString stringWithFormat:@"%@%@%ld%@%@%@",method,path,(long)userId,sid,ts,secert];
+        src = [NSString stringWithFormat:@"%@%@%llu%@%@%@",method,path,userId,sid,ts,secert];
     }
     
     ITOLOG(@"\nsrc = %@",src);
@@ -168,7 +168,7 @@
 //设置基础参数
 -(void)setAFNRequestHeader:(AFHTTPSessionManager *)manager
 {
-    NSInteger userId = [AppEngine shareInstance].mUserId > 0 ? [AppEngine shareInstance].mUserId : 1;
+    UInt64 userId = [AppEngine shareInstance].mUserId > 0 ? [AppEngine shareInstance].mUserId : 1;
     NSString* sid = [AppEngine shareInstance].mSid == nil? @"":[AppEngine shareInstance].mSid;
     
     [manager.requestSerializer setValue:[[NSNumber numberWithInteger:userId] stringValue] forHTTPHeaderField:@"uid"];

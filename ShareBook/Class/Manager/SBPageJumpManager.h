@@ -18,4 +18,6 @@
 
 -(void)pushToBookDetailVCBookId:(NSString *)bookId;
 
+-(void)pushToUserInfoVCWithUid:(UInt64)uid;
+
 @end

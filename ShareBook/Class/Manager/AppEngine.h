@@ -13,7 +13,7 @@
 /**
  用户uid
  */
-@property (nonatomic, assign) NSInteger mUserId;
+@property (nonatomic, assign) UInt64 mUserId;
 
 /**
  登陆校验

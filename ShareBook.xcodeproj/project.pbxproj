@@ -34,6 +34,7 @@
 		49958EC71F4590AC00A9099C /* SBBookDetailBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958EC61F4590AC00A9099C /* SBBookDetailBottomView.m */; };
 		49958ECA1F45924400A9099C /* UIButton+LSAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958EC91F45924400A9099C /* UIButton+LSAdd.m */; };
 		49958ECD1F45B10C00A9099C /* SBHomeMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958ECC1F45B10C00A9099C /* SBHomeMessageCell.m */; };
+		49958ED01F45D76900A9099C /* SBUserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958ECF1F45D76900A9099C /* SBUserInfoVC.m */; };
 		49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1591F3ECACA008EB320 /* LSTabBarController.m */; };
 		49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */; };
 		49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */; };
@@ -100,6 +101,8 @@
 		49958EC91F45924400A9099C /* UIButton+LSAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LSAdd.m"; sourceTree = "<group>"; };
 		49958ECB1F45B10C00A9099C /* SBHomeMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBHomeMessageCell.h; sourceTree = "<group>"; };
 		49958ECC1F45B10C00A9099C /* SBHomeMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBHomeMessageCell.m; sourceTree = "<group>"; };
+		49958ECE1F45D76900A9099C /* SBUserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBUserInfoVC.h; sourceTree = "<group>"; };
+		49958ECF1F45D76900A9099C /* SBUserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBUserInfoVC.m; sourceTree = "<group>"; };
 		49B7F1581F3ECACA008EB320 /* LSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabBarController.h; sourceTree = "<group>"; };
 		49B7F1591F3ECACA008EB320 /* LSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabBarController.m; sourceTree = "<group>"; };
 		49B7F15B1F3ECCC5008EB320 /* LSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHomeViewController.h; sourceTree = "<group>"; };
@@ -318,6 +321,8 @@
 				49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */,
 				494EE8181F4557E000C30D83 /* SBBookDetailVC.h */,
 				494EE8191F4557E000C30D83 /* SBBookDetailVC.m */,
+				49958ECE1F45D76900A9099C /* SBUserInfoVC.h */,
+				49958ECF1F45D76900A9099C /* SBUserInfoVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -591,6 +596,7 @@
 				49B7F1661F3ECCF2008EB320 /* LSMineViewController.m in Sources */,
 				49DADF181F400162005DD5F6 /* Utils.m in Sources */,
 				49CB82051F41E5310053A75E /* MessagePage.m in Sources */,
+				49958ED01F45D76900A9099C /* SBUserInfoVC.m in Sources */,
 				4978EDBC1F41EE010072D08A /* SBBorrowBookCellTopView.m in Sources */,
 				49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */,
 				491C6E171F40B6CB00001F2A /* TabModel.m in Sources */,

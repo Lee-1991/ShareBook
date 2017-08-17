@@ -8,6 +8,7 @@
 
 #import "SBPageJumpManager.h"
 #import "SBBookDetailVC.h"
+#import "SBUserInfoVC.h"
 
 @implementation SBPageJumpManager
 
@@ -31,6 +32,12 @@
     SBBookDetailVC *vc = [[SBBookDetailVC alloc] init];
     vc.mHeaderView.mTitleLbl.text = @"书籍详情";
     vc.mBookId = bookId;
+    [[self currentVC].navigationController pushViewController:vc animated:YES];
+}
+
+-(void)pushToUserInfoVCWithUid:(UInt64)uid{
+    SBUserInfoVC *vc = [[SBUserInfoVC alloc] init];
+    vc.mUid = uid;
     [[self currentVC].navigationController pushViewController:vc animated:YES];
 }
 
