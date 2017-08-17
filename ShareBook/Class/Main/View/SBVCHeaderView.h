@@ -16,4 +16,6 @@
 
 @property (strong,nonatomic) UIView *mBackgroundView;
 
+@property (strong,nonatomic) UIView *mSeparateLine;
+
 @end

@@ -7,8 +7,11 @@
 //
 
 #import "SBUserInfoVC.h"
+#import "SBUserInfoView.h"
 
 @interface SBUserInfoVC ()
+
+@property (strong,nonatomic) SBUserInfoView *mUserInfoView;
 
 @end
 
@@ -18,6 +21,8 @@
     [super viewDidLoad];
     
     self.mHeaderView.mTitleLbl.text = @"借书";
+    self.mHeaderView.mSeparateLine.hidden = YES;
+    [self setupContentView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,14 +30,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)setupContentView{
+    _mUserInfoView = [[SBUserInfoView alloc] init];
+    [self.view addSubview:_mUserInfoView];
+    [_mUserInfoView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view.mas_left);
+        make.right.equalTo(self.view.mas_right);
+        make.top.equalTo(self.mHeaderView.mas_bottom);
+        make.height.mas_equalTo([SBUserInfoView heightOfInfoView]);
+    }];
 }
-*/
 
 @end

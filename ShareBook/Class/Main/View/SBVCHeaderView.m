@@ -37,9 +37,9 @@
     _mTitleLbl.numberOfLines = 1;
     [self addSubview:_mTitleLbl];
     
-    UIView* line = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height-1, self.frame.size.width, 1)];
-    line.backgroundColor = [Utils getUIColorFromHex:0xffdedede];
-    [self addSubview:line];
+    _mSeparateLine = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height-1, self.frame.size.width, 1)];
+    _mSeparateLine.backgroundColor = [Utils getUIColorFromHex:0xffdedede];
+    [self addSubview:_mSeparateLine];
 }
 
 @end

@@ -35,6 +35,7 @@
 		49958ECA1F45924400A9099C /* UIButton+LSAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958EC91F45924400A9099C /* UIButton+LSAdd.m */; };
 		49958ECD1F45B10C00A9099C /* SBHomeMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958ECC1F45B10C00A9099C /* SBHomeMessageCell.m */; };
 		49958ED01F45D76900A9099C /* SBUserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958ECF1F45D76900A9099C /* SBUserInfoVC.m */; };
+		49958ED31F45DA2000A9099C /* SBUserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958ED21F45DA2000A9099C /* SBUserInfoView.m */; };
 		49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1591F3ECACA008EB320 /* LSTabBarController.m */; };
 		49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */; };
 		49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */; };
@@ -103,6 +104,8 @@
 		49958ECC1F45B10C00A9099C /* SBHomeMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBHomeMessageCell.m; sourceTree = "<group>"; };
 		49958ECE1F45D76900A9099C /* SBUserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBUserInfoVC.h; sourceTree = "<group>"; };
 		49958ECF1F45D76900A9099C /* SBUserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBUserInfoVC.m; sourceTree = "<group>"; };
+		49958ED11F45DA2000A9099C /* SBUserInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBUserInfoView.h; sourceTree = "<group>"; };
+		49958ED21F45DA2000A9099C /* SBUserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBUserInfoView.m; sourceTree = "<group>"; };
 		49B7F1581F3ECACA008EB320 /* LSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabBarController.h; sourceTree = "<group>"; };
 		49B7F1591F3ECACA008EB320 /* LSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabBarController.m; sourceTree = "<group>"; };
 		49B7F15B1F3ECCC5008EB320 /* LSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHomeViewController.h; sourceTree = "<group>"; };
@@ -310,6 +313,8 @@
 				49958EC31F45899600A9099C /* SBBookDetailInfoView.m */,
 				49958EC51F4590AC00A9099C /* SBBookDetailBottomView.h */,
 				49958EC61F4590AC00A9099C /* SBBookDetailBottomView.m */,
+				49958ED11F45DA2000A9099C /* SBUserInfoView.h */,
+				49958ED21F45DA2000A9099C /* SBUserInfoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -609,6 +614,7 @@
 				4978EDC21F4204860072D08A /* SBBookInfoCollectionCell.m in Sources */,
 				49DADF1E1F4002DB005DD5F6 /* AppEngine.m in Sources */,
 				491C6E111F40AB3C00001F2A /* UserMiniInfoModel.m in Sources */,
+				49958ED31F45DA2000A9099C /* SBUserInfoView.m in Sources */,
 				494EE81D1F45582000C30D83 /* SBPageJumpManager.m in Sources */,
 				491C6E211F40B81A00001F2A /* SendVCodelReqModel.m in Sources */,
 				49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */,
