@@ -7,8 +7,12 @@
 //
 
 #import "LSMessageViewController.h"
+#import "MessagePage.h"
+#import "SBHomeMessageCell.h"
 
-@interface LSMessageViewController ()
+@interface LSMessageViewController ()<MessagePageDelegate,UITableViewDelegate,UITableViewDataSource>
+
+@property (strong,nonatomic) MessagePage *mTableView;
 
 @end
 
@@ -18,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    [self setupContentView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,14 +30,58 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//MARK: UITableView
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 10;
 }
-*/
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return [SBHomeMessageCell heightOfCell];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *cellId = @"homeMessageCell";
+    SBHomeMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell == nil) {
+        cell = [[SBHomeMessageCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+    }
+    
+    return cell;
+}
+
+
+//MARK: MessagePageDelegate
+-(void)doRefresh{
+    [_mTableView comepleteRefreshAndLoadMore];
+}
+
+-(void)doLoadMore{
+    
+}
+
+-(void)setupContentView{
+    UIView* headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, 66)];
+    [self.view addSubview:headerView];
+    headerView.backgroundColor = [Utils getUIColorFromHex:0xff43c6ff];
+    
+    UILabel* titleLbl = [[UILabel alloc] init];
+    [self.view addSubview:titleLbl];
+    titleLbl.font = FONT(16);
+    titleLbl.textColor = [Utils getUIColorFromHex:0xffffffff];
+    titleLbl.text = @"消息";
+    [titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.bottom.equalTo(headerView.mas_bottom).offset(-13*Fit_RATE);
+    }];
+    
+    _mTableView = [[MessagePage alloc] initWithFrame:CGRectMake(0, 66, ScreenW, ScreenH-66)];
+    [self.view addSubview:_mTableView];
+    [_mTableView setRefreshType:SetRefreshTypeHeaderOnly];
+    _mTableView.mMessagePageDelegate = self;
+    _mTableView.delegate = self;
+    _mTableView.dataSource = self;
+}
+
 
 @end

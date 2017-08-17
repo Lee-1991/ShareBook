@@ -17,7 +17,6 @@ static CGFloat MarginToSide = 11*Fit_RATE;
 @property (strong,nonatomic) UILabel *mLevelLbl;
 @property (strong,nonatomic) UIImageView *mLevelImgView;
 @property (strong,nonatomic) UILabel *mSignLbl;
-@property (strong,nonatomic) UILabel *mDistanceLbl;
 
 
 @end

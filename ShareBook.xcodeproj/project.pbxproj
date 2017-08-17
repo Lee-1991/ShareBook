@@ -33,6 +33,7 @@
 		49958EC41F45899600A9099C /* SBBookDetailInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958EC31F45899600A9099C /* SBBookDetailInfoView.m */; };
 		49958EC71F4590AC00A9099C /* SBBookDetailBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958EC61F4590AC00A9099C /* SBBookDetailBottomView.m */; };
 		49958ECA1F45924400A9099C /* UIButton+LSAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958EC91F45924400A9099C /* UIButton+LSAdd.m */; };
+		49958ECD1F45B10C00A9099C /* SBHomeMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958ECC1F45B10C00A9099C /* SBHomeMessageCell.m */; };
 		49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1591F3ECACA008EB320 /* LSTabBarController.m */; };
 		49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */; };
 		49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */; };
@@ -97,6 +98,8 @@
 		49958EC61F4590AC00A9099C /* SBBookDetailBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBookDetailBottomView.m; sourceTree = "<group>"; };
 		49958EC81F45924400A9099C /* UIButton+LSAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LSAdd.h"; sourceTree = "<group>"; };
 		49958EC91F45924400A9099C /* UIButton+LSAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LSAdd.m"; sourceTree = "<group>"; };
+		49958ECB1F45B10C00A9099C /* SBHomeMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBHomeMessageCell.h; sourceTree = "<group>"; };
+		49958ECC1F45B10C00A9099C /* SBHomeMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBHomeMessageCell.m; sourceTree = "<group>"; };
 		49B7F1581F3ECACA008EB320 /* LSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabBarController.h; sourceTree = "<group>"; };
 		49B7F1591F3ECACA008EB320 /* LSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabBarController.m; sourceTree = "<group>"; };
 		49B7F15B1F3ECCC5008EB320 /* LSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHomeViewController.h; sourceTree = "<group>"; };
@@ -350,6 +353,8 @@
 		49B7F14F1F3EC4CC008EB320 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				49958ECB1F45B10C00A9099C /* SBHomeMessageCell.h */,
+				49958ECC1F45B10C00A9099C /* SBHomeMessageCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -608,6 +613,7 @@
 				495D2C661F3F70E00092790F /* LSNetWorkManager.m in Sources */,
 				49CB82021F41DD430053A75E /* IndicatorTab.m in Sources */,
 				491FE87A1F3EBC01002723DD /* AppDelegate.m in Sources */,
+				49958ECD1F45B10C00A9099C /* SBHomeMessageCell.m in Sources */,
 				494EE81A1F4557E000C30D83 /* SBBookDetailVC.m in Sources */,
 				49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */,
 				494EE8171F45535B00C30D83 /* SBVCHeaderView.m in Sources */,
