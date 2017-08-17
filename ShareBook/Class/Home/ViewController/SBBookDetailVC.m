@@ -8,10 +8,12 @@
 
 #import "SBBookDetailVC.h"
 #import "SBBookDetailInfoView.h"
+#import "SBBookDetailBottomView.h"
 
 @interface SBBookDetailVC ()
 
 @property (strong,nonatomic) SBBookDetailInfoView *mBookInfoView;
+@property (strong,nonatomic) SBBookDetailBottomView *mBottomView;
 
 @end
 
@@ -40,7 +42,14 @@
         make.size.mas_equalTo(CGSizeMake(ScreenW, 217*Fit_RATE));
     }];
     
-    
+    _mBottomView = [[SBBookDetailBottomView alloc] init];
+    [self.view addSubview:_mBottomView];
+    [_mBottomView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view.mas_left);
+        make.right.equalTo(self.view.mas_right);
+        make.bottom.equalTo(self.view.mas_bottom);
+        make.height.mas_equalTo([SBBookDetailBottomView heightOfBottomView]);
+    }];
 }
 
 

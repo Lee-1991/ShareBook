@@ -10,4 +10,6 @@
 
 @interface SBBookDetailBottomView : UIView
 
++(CGFloat)heightOfBottomView;
+
 @end

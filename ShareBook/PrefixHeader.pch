@@ -60,3 +60,5 @@
  */
 #define ColorPlaceHolder [Utils getUIColorFromHex:0xff999999]
 
+#define ColorSeparateLine [Utils getUIColorFromHex:0xffdedede]
+
