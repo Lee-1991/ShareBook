@@ -21,6 +21,10 @@
 		491FE87A1F3EBC01002723DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 491FE8791F3EBC01002723DD /* AppDelegate.m */; };
 		491FE8821F3EBC01002723DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491FE8811F3EBC01002723DD /* Assets.xcassets */; };
 		491FE8851F3EBC01002723DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491FE8831F3EBC01002723DD /* LaunchScreen.storyboard */; };
+		494EE8141F4551EC00C30D83 /* SBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EE8131F4551EC00C30D83 /* SBBaseViewController.m */; };
+		494EE8171F45535B00C30D83 /* SBVCHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EE8161F45535B00C30D83 /* SBVCHeaderView.m */; };
+		494EE81A1F4557E000C30D83 /* SBBookDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EE8191F4557E000C30D83 /* SBBookDetailVC.m */; };
+		494EE81D1F45582000C30D83 /* SBPageJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EE81C1F45582000C30D83 /* SBPageJumpManager.m */; };
 		495D2C661F3F70E00092790F /* LSNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D2C651F3F70E00092790F /* LSNetWorkManager.m */; };
 		495D2C6C1F3F722A0092790F /* LSNetWorkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D2C6B1F3F722A0092790F /* LSNetWorkHelper.m */; };
 		4978EDBC1F41EE010072D08A /* SBBorrowBookCellTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4978EDBB1F41EE010072D08A /* SBBorrowBookCellTopView.m */; };
@@ -66,6 +70,14 @@
 		491FE8811F3EBC01002723DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		491FE8841F3EBC01002723DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		491FE8861F3EBC01002723DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494EE8121F4551EC00C30D83 /* SBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBaseViewController.h; sourceTree = "<group>"; };
+		494EE8131F4551EC00C30D83 /* SBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBaseViewController.m; sourceTree = "<group>"; };
+		494EE8151F45535B00C30D83 /* SBVCHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBVCHeaderView.h; sourceTree = "<group>"; };
+		494EE8161F45535B00C30D83 /* SBVCHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBVCHeaderView.m; sourceTree = "<group>"; };
+		494EE8181F4557E000C30D83 /* SBBookDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBookDetailVC.h; sourceTree = "<group>"; };
+		494EE8191F4557E000C30D83 /* SBBookDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBookDetailVC.m; sourceTree = "<group>"; };
+		494EE81B1F45582000C30D83 /* SBPageJumpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPageJumpManager.h; sourceTree = "<group>"; };
+		494EE81C1F45582000C30D83 /* SBPageJumpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPageJumpManager.m; sourceTree = "<group>"; };
 		495D2C641F3F70E00092790F /* LSNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetWorkManager.h; sourceTree = "<group>"; };
 		495D2C651F3F70E00092790F /* LSNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNetWorkManager.m; sourceTree = "<group>"; };
 		495D2C6A1F3F722A0092790F /* LSNetWorkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetWorkHelper.h; sourceTree = "<group>"; };
@@ -158,10 +170,10 @@
 			children = (
 				491FE8781F3EBC01002723DD /* AppDelegate.h */,
 				491FE8791F3EBC01002723DD /* AppDelegate.m */,
-				49B7F1431F3EC4CC008EB320 /* Class */,
 				491FE8811F3EBC01002723DD /* Assets.xcassets */,
-				491FE8831F3EBC01002723DD /* LaunchScreen.storyboard */,
 				491FE8861F3EBC01002723DD /* Info.plist */,
+				49B7F1431F3EC4CC008EB320 /* Class */,
+				491FE8831F3EBC01002723DD /* LaunchScreen.storyboard */,
 				491FE8751F3EBC01002723DD /* Supporting Files */,
 			);
 			path = ShareBook;
@@ -183,6 +195,8 @@
 				49DADF151F3FFE4C005DD5F6 /* NetWork */,
 				49DADF1C1F4002DB005DD5F6 /* AppEngine.h */,
 				49DADF1D1F4002DB005DD5F6 /* AppEngine.m */,
+				494EE81B1F45582000C30D83 /* SBPageJumpManager.h */,
+				494EE81C1F45582000C30D83 /* SBPageJumpManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -284,6 +298,8 @@
 			children = (
 				49B7F15B1F3ECCC5008EB320 /* LSHomeViewController.h */,
 				49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */,
+				494EE8181F4557E000C30D83 /* SBBookDetailVC.h */,
+				494EE8191F4557E000C30D83 /* SBBookDetailVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -390,6 +406,8 @@
 				49CB82041F41E5310053A75E /* MessagePage.m */,
 				49CB82001F41DD430053A75E /* IndicatorTab.h */,
 				49CB82011F41DD430053A75E /* IndicatorTab.m */,
+				494EE8151F45535B00C30D83 /* SBVCHeaderView.h */,
+				494EE8161F45535B00C30D83 /* SBVCHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,6 +417,8 @@
 			children = (
 				49B7F1581F3ECACA008EB320 /* LSTabBarController.h */,
 				49B7F1591F3ECACA008EB320 /* LSTabBarController.m */,
+				494EE8121F4551EC00C30D83 /* SBBaseViewController.h */,
+				494EE8131F4551EC00C30D83 /* SBBaseViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -558,10 +578,12 @@
 				4978EDBF1F41F6E50072D08A /* SBBorrowBookCell.m in Sources */,
 				491C6E0B1F40AAF300001F2A /* BookInfoRespModel.m in Sources */,
 				491C6E141F40AE6F00001F2A /* ImageInfoModel.m in Sources */,
+				494EE8141F4551EC00C30D83 /* SBBaseViewController.m in Sources */,
 				49B7F1631F3ECCE8008EB320 /* LSMessageViewController.m in Sources */,
 				4978EDC21F4204860072D08A /* SBBookInfoCollectionCell.m in Sources */,
 				49DADF1E1F4002DB005DD5F6 /* AppEngine.m in Sources */,
 				491C6E111F40AB3C00001F2A /* UserMiniInfoModel.m in Sources */,
+				494EE81D1F45582000C30D83 /* SBPageJumpManager.m in Sources */,
 				491C6E211F40B81A00001F2A /* SendVCodelReqModel.m in Sources */,
 				49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */,
 				491C6E051F40AA7F00001F2A /* BaseRespModel.m in Sources */,
@@ -569,7 +591,9 @@
 				495D2C661F3F70E00092790F /* LSNetWorkManager.m in Sources */,
 				49CB82021F41DD430053A75E /* IndicatorTab.m in Sources */,
 				491FE87A1F3EBC01002723DD /* AppDelegate.m in Sources */,
+				494EE81A1F4557E000C30D83 /* SBBookDetailVC.m in Sources */,
 				49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */,
+				494EE8171F45535B00C30D83 /* SBVCHeaderView.m in Sources */,
 				491C6E0E1F40AB0700001F2A /* BookInfoModel.m in Sources */,
 				491FE8771F3EBC01002723DD /* main.m in Sources */,
 			);

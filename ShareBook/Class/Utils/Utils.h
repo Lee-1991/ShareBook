@@ -49,5 +49,10 @@
 
 + (UIButton*)get3xAutoWrapButtonWithIconNormal:(UIImage*)_iconNormal iconHighlighted:(UIImage*)_iconHighlighted size:(CGSize)_size;
 
+/**
+ 获取指定大小的按钮
+ */
++ (UIButton*)getAutoWrapButtonWithIconNormal:(UIImage*)_iconNormal iconHighlighted:(UIImage*)_iconHighlighted size:(CGSize)_size;
+
 
 @end

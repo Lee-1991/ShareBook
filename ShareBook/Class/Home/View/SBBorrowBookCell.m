@@ -10,6 +10,7 @@
 #import "SBBorrowBookCellTopView.h"
 #import "SBBookInfoCollectionCell.h"
 
+
 static NSString* kBookInfoCellId = @"kBookInfoCellId";
 
 @interface SBBorrowBookCell()<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -88,6 +89,11 @@ static NSString* kBookInfoCellId = @"kBookInfoCellId";
             break;
     }
     return size;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [[SBPageJumpManager shareInstance] pushToBookDetailVCBookId:nil];
 }
 
 

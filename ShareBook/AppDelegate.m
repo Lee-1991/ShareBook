@@ -28,8 +28,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     LSTabBarController* tabVC = [[LSTabBarController alloc] init];
 
-    
-    self.window.rootViewController = tabVC;
+    UINavigationController* navVC = [[UINavigationController alloc] initWithRootViewController:tabVC];
+    navVC.navigationBarHidden = YES;
+    self.window.rootViewController = navVC;
     [self.window makeKeyAndVisible];
     
     

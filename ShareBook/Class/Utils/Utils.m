@@ -161,5 +161,22 @@
     return tempBtn;
 }
 
++ (UIButton*)getAutoWrapButtonWithIconNormal:(UIImage*)_iconNormal iconHighlighted:(UIImage*)_iconHighlighted size:(CGSize)_size
+{
+    if ((_iconNormal == nil && _iconHighlighted == nil) || (_size.width <= 0 && _size.height <= 0))
+    {
+        return nil;
+    }
+    
+    UIImage* tempImage = _iconNormal == nil ? _iconHighlighted : _iconNormal;
+    
+    UIButton* tempBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, _size.width, _size.height)];
+    [tempBtn setImage:_iconNormal forState:UIControlStateNormal];
+    [tempBtn setImage:_iconHighlighted forState:UIControlStateHighlighted];
+    [tempBtn setImageEdgeInsets:UIEdgeInsetsMake((tempBtn.frame.size.height - tempImage.size.height)/2, (tempBtn.frame.size.width - tempImage.size.width)/2, (tempBtn.frame.size.height - tempImage.size.height)/2, (tempBtn.frame.size.width - tempImage.size.width)/2)];
+    
+    return tempBtn;
+}
+
 
 @end
