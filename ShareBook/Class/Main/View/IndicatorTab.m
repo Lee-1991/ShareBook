@@ -127,7 +127,7 @@
             CGRect rect = mSelectedLine.frame;
             rect.size.width = 12;
             rect.size.height = 2;
-            rect.origin.y = tabBtn.frame.size.height - 2;
+            rect.origin.y = tabBtn.frame.size.height - 6;
             rect.origin.x = tabBtn.center.x - rect.size.width * 0.5;
             mSelectedLine.frame = rect;
         }
@@ -146,7 +146,7 @@
         [self addConstraint:[NSLayoutConstraint constraintWithItem:redHotView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:0 multiplier:1.0 constant:redHotImg.size.height/2]];
     }
     
-    UIView* line = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height, self.frame.size.width, 1)];
+    UIView* line = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height-1, self.frame.size.width, 1)];
     line.backgroundColor = [Utils getUIColorFromHex:0xffdedede];
     [self addSubview:line];
     line.hidden = !self.mShowSeperateLine;

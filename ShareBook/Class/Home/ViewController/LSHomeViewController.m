@@ -77,6 +77,7 @@
     IndicatorTab* indicator = [[IndicatorTab alloc] initWithFrame:CGRectMake(0, 20, ScreenW, 44)];
     [self.view addSubview:indicator];
     indicator.mDelegate = self;
+    indicator.mShowSeperateLine = YES;
     NSArray* items = [NSArray arrayWithObjects:@"距离",@"数量",@"优选",@"好友", nil];
     [indicator setData:items];
     
