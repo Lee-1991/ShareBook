@@ -31,6 +31,8 @@
 		4978EDBF1F41F6E50072D08A /* SBBorrowBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4978EDBE1F41F6E50072D08A /* SBBorrowBookCell.m */; };
 		4978EDC21F4204860072D08A /* SBBookInfoCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4978EDC11F4204860072D08A /* SBBookInfoCollectionCell.m */; };
 		49958EC41F45899600A9099C /* SBBookDetailInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958EC31F45899600A9099C /* SBBookDetailInfoView.m */; };
+		49958EC71F4590AC00A9099C /* SBBookDetailBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958EC61F4590AC00A9099C /* SBBookDetailBottomView.m */; };
+		49958ECA1F45924400A9099C /* UIButton+LSAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958EC91F45924400A9099C /* UIButton+LSAdd.m */; };
 		49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1591F3ECACA008EB320 /* LSTabBarController.m */; };
 		49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */; };
 		49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */; };
@@ -91,6 +93,10 @@
 		4978EDC11F4204860072D08A /* SBBookInfoCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBookInfoCollectionCell.m; sourceTree = "<group>"; };
 		49958EC21F45899600A9099C /* SBBookDetailInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBookDetailInfoView.h; sourceTree = "<group>"; };
 		49958EC31F45899600A9099C /* SBBookDetailInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBookDetailInfoView.m; sourceTree = "<group>"; };
+		49958EC51F4590AC00A9099C /* SBBookDetailBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBookDetailBottomView.h; sourceTree = "<group>"; };
+		49958EC61F4590AC00A9099C /* SBBookDetailBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBookDetailBottomView.m; sourceTree = "<group>"; };
+		49958EC81F45924400A9099C /* UIButton+LSAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LSAdd.h"; sourceTree = "<group>"; };
+		49958EC91F45924400A9099C /* UIButton+LSAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LSAdd.m"; sourceTree = "<group>"; };
 		49B7F1581F3ECACA008EB320 /* LSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabBarController.h; sourceTree = "<group>"; };
 		49B7F1591F3ECACA008EB320 /* LSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabBarController.m; sourceTree = "<group>"; };
 		49B7F15B1F3ECCC5008EB320 /* LSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHomeViewController.h; sourceTree = "<group>"; };
@@ -209,6 +215,8 @@
 			children = (
 				49DADF161F400162005DD5F6 /* Utils.h */,
 				49DADF171F400162005DD5F6 /* Utils.m */,
+				49958EC81F45924400A9099C /* UIButton+LSAdd.h */,
+				49958EC91F45924400A9099C /* UIButton+LSAdd.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -294,6 +302,8 @@
 				4978EDC11F4204860072D08A /* SBBookInfoCollectionCell.m */,
 				49958EC21F45899600A9099C /* SBBookDetailInfoView.h */,
 				49958EC31F45899600A9099C /* SBBookDetailInfoView.m */,
+				49958EC51F4590AC00A9099C /* SBBookDetailBottomView.h */,
+				49958EC61F4590AC00A9099C /* SBBookDetailBottomView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -593,6 +603,7 @@
 				49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */,
 				491C6E051F40AA7F00001F2A /* BaseRespModel.m in Sources */,
 				49958EC41F45899600A9099C /* SBBookDetailInfoView.m in Sources */,
+				49958EC71F4590AC00A9099C /* SBBookDetailBottomView.m in Sources */,
 				49DADF141F3FFE37005DD5F6 /* NetWorkErrorModel.m in Sources */,
 				495D2C661F3F70E00092790F /* LSNetWorkManager.m in Sources */,
 				49CB82021F41DD430053A75E /* IndicatorTab.m in Sources */,
@@ -601,6 +612,7 @@
 				49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */,
 				494EE8171F45535B00C30D83 /* SBVCHeaderView.m in Sources */,
 				491C6E0E1F40AB0700001F2A /* BookInfoModel.m in Sources */,
+				49958ECA1F45924400A9099C /* UIButton+LSAdd.m in Sources */,
 				491FE8771F3EBC01002723DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
