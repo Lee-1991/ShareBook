@@ -23,7 +23,7 @@
 
 -(UIViewController *)currentVC
 {
-    UIViewController *currentVC = [[(UINavigationController *)[UIApplication sharedApplication].delegate.window.rootViewController viewControllers] firstObject];
+    UIViewController *currentVC = [[(UINavigationController *)[UIApplication sharedApplication].delegate.window.rootViewController viewControllers] lastObject];
     return currentVC;
 }
 
