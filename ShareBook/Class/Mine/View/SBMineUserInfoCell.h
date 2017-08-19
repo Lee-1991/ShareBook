@@ -10,6 +10,8 @@
 
 @interface SBMineUserInfoCell : UITableViewCell
 
+@property (strong,nonatomic) UIButton *mShareBtn;
+
 
 +(CGFloat)heightOfCell;
 

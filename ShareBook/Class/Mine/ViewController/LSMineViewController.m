@@ -40,6 +40,20 @@
     return 2;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    CGFloat heighHeader = 0;
+    if (section == 1) {
+        heighHeader = 10*Fit_RATE;
+    }
+    return heighHeader;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView* header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, 10*Fit_RATE)];
+    header.backgroundColor = ColorSeparateLine;
+    return header;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSInteger cellNum = 1;
     if (section == 1) {

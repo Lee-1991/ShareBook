@@ -10,17 +10,14 @@
 
 @interface SBUserInfoView()
 
-@property (strong,nonatomic) UIButton *mHeadIcon;
-@property (strong,nonatomic) UILabel *mNickLbl;
 @property (strong,nonatomic) UILabel *mLevelLbl;
 @property (strong,nonatomic) UIImageView *mLevelImgView;
 @property (strong,nonatomic) UILabel *mSignLbl;
-@property (strong,nonatomic) UILabel *mCountLbl;
 @property (strong,nonatomic) UILabel *mCountTipsLbl;
 @property (strong,nonatomic) UILabel *mFriendCountLbl;
 @property (strong,nonatomic) UILabel *mFriendTipsLbl;
 @property (strong,nonatomic) UILabel *mTimeLbl;
-@property (strong,nonatomic) UIButton *mFollowBtn;
+
 
 @end
 
@@ -163,10 +160,10 @@
         make.bottom.equalTo(self.mas_bottom).offset(-10*Fit_RATE);
     }];
     
-    UIView* separateLine = [[UIView alloc] init];
-    [self addSubview:separateLine];
-    separateLine.backgroundColor = ColorSeparateLine;
-    [separateLine mas_makeConstraints:^(MASConstraintMaker *make) {
+    _mSeperateLine = [[UIView alloc] init];
+    [self addSubview:_mSeperateLine];
+    _mSeperateLine.backgroundColor = ColorSeparateLine;
+    [_mSeperateLine mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left);
         make.right.equalTo(self.mas_right);
         make.bottom.equalTo(self.mas_bottom);
