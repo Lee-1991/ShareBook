@@ -24,6 +24,7 @@
 		494BF2661F47EC0600E1340B /* UIView+LSAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 494BF2651F47EC0600E1340B /* UIView+LSAdd.m */; };
 		494BF2691F47EE5A00E1340B /* LSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494BF2681F47EE5A00E1340B /* LSMineViewController.m */; };
 		494BF26C1F47F0F400E1340B /* SBMineNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 494BF26B1F47F0F400E1340B /* SBMineNormalCell.m */; };
+		494BF2721F47FF9600E1340B /* SBMineUserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 494BF2711F47FF9600E1340B /* SBMineUserInfoCell.m */; };
 		494EE8141F4551EC00C30D83 /* SBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EE8131F4551EC00C30D83 /* SBBaseViewController.m */; };
 		494EE8171F45535B00C30D83 /* SBVCHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EE8161F45535B00C30D83 /* SBVCHeaderView.m */; };
 		494EE81A1F4557E000C30D83 /* SBBookDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EE8191F4557E000C30D83 /* SBBookDetailVC.m */; };
@@ -84,6 +85,8 @@
 		494BF2681F47EE5A00E1340B /* LSMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMineViewController.m; sourceTree = "<group>"; };
 		494BF26A1F47F0F400E1340B /* SBMineNormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBMineNormalCell.h; sourceTree = "<group>"; };
 		494BF26B1F47F0F400E1340B /* SBMineNormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBMineNormalCell.m; sourceTree = "<group>"; };
+		494BF2701F47FF9600E1340B /* SBMineUserInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBMineUserInfoCell.h; sourceTree = "<group>"; };
+		494BF2711F47FF9600E1340B /* SBMineUserInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBMineUserInfoCell.m; sourceTree = "<group>"; };
 		494EE8121F4551EC00C30D83 /* SBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBaseViewController.h; sourceTree = "<group>"; };
 		494EE8131F4551EC00C30D83 /* SBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBaseViewController.m; sourceTree = "<group>"; };
 		494EE8151F45535B00C30D83 /* SBVCHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBVCHeaderView.h; sourceTree = "<group>"; };
@@ -407,6 +410,8 @@
 		49B7F1531F3EC4CC008EB320 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				494BF2701F47FF9600E1340B /* SBMineUserInfoCell.h */,
+				494BF2711F47FF9600E1340B /* SBMineUserInfoCell.m */,
 				494BF26A1F47F0F400E1340B /* SBMineNormalCell.h */,
 				494BF26B1F47F0F400E1340B /* SBMineNormalCell.m */,
 			);
@@ -606,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494BF2721F47FF9600E1340B /* SBMineUserInfoCell.m in Sources */,
 				491C6E241F40BAB600001F2A /* CheckVcodeReqModel.m in Sources */,
 				491C6E1D1F40B7C700001F2A /* SimpleRespModel.m in Sources */,
 				49DADF181F400162005DD5F6 /* Utils.m in Sources */,

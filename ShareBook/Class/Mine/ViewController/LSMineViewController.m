@@ -8,6 +8,7 @@
 
 #import "LSMineViewController.h"
 #import "SBMineNormalCell.h"
+#import "SBMineUserInfoCell.h"
 
 @interface LSMineViewController ()
 
@@ -40,7 +41,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSInteger cellNum = 0;
+    NSInteger cellNum = 1;
     if (section == 1) {
         cellNum = 5;
     }
@@ -49,7 +50,11 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat heightCell = 0;
-    if (indexPath.section == 1) {
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            heightCell = [SBMineUserInfoCell heightOfCell];
+        }
+    }else if (indexPath.section == 1) {
         heightCell = [SBMineNormalCell heightOfCell];
     }
     
@@ -61,8 +66,10 @@
     
     
     UITableViewCell *cell = nil;
-    if (indexPath.section == 1) {
-        cell = [self cellNormalTableView:tableView rowIndexPath:indexPath];
+    if (indexPath.section == 0) {
+        cell = [self cellSectionUserTableView:tableView indexPath:indexPath];
+    }else if (indexPath.section == 1) {
+        cell = [self cellSectionNormalTableView:tableView rowIndexPath:indexPath];
     }
     
     // Configure the cell...
@@ -70,7 +77,25 @@
     return cell;
 }
 
--(UITableViewCell *)cellNormalTableView:(UITableView *)tableView rowIndexPath:(NSIndexPath *)indexPath{
+-(UITableViewCell *)cellSectionUserTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath{
+    UITableViewCell* cell = nil;
+    if (indexPath.row == 0) {
+        cell = [self cellUserInfoTableView:tableView indexPath:indexPath];
+    }
+    return cell;
+}
+
+-(UITableViewCell *)cellUserInfoTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath{
+    static NSString* cellId = @"mineCellUserInfo";
+    SBMineUserInfoCell* cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell == nil) {
+        cell = [[SBMineUserInfoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+    }
+    
+    return cell;
+}
+
+-(UITableViewCell *)cellSectionNormalTableView:(UITableView *)tableView rowIndexPath:(NSIndexPath *)indexPath{
     static NSString* cellId = @"mineCellNormal";
     SBMineNormalCell* cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     if (cell == nil) {
