@@ -40,7 +40,7 @@
 }
 
 -(void)onClickFollowBtn:(UIButton *)sender{
-    
+    [sender setTitle:@"已关注" forState:UIControlStateNormal];
 }
 
 //MARK: UI
@@ -156,7 +156,7 @@
     [self addSubview:_mFollowBtn];
     [_mFollowBtn setTitleColor:[Utils getUIColorFromHex:0xff43c6ff] forState:UIControlStateNormal];
     [_mFollowBtn.titleLabel setFont:FONT(11)];
-    [_mFollowBtn setTitle:@"关注>" forState:UIControlStateNormal];
+    [_mFollowBtn setTitle:@"关注" forState:UIControlStateNormal];
     [_mFollowBtn addTarget:self action:@selector(onClickFollowBtn:) forControlEvents:UIControlEventTouchUpInside];
     [_mFollowBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.mas_right).offset(-marginToSide);

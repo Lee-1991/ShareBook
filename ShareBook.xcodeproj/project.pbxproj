@@ -21,6 +21,7 @@
 		491FE87A1F3EBC01002723DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 491FE8791F3EBC01002723DD /* AppDelegate.m */; };
 		491FE8821F3EBC01002723DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491FE8811F3EBC01002723DD /* Assets.xcassets */; };
 		491FE8851F3EBC01002723DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491FE8831F3EBC01002723DD /* LaunchScreen.storyboard */; };
+		494BF2661F47EC0600E1340B /* UIView+LSAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 494BF2651F47EC0600E1340B /* UIView+LSAdd.m */; };
 		494EE8141F4551EC00C30D83 /* SBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EE8131F4551EC00C30D83 /* SBBaseViewController.m */; };
 		494EE8171F45535B00C30D83 /* SBVCHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EE8161F45535B00C30D83 /* SBVCHeaderView.m */; };
 		494EE81A1F4557E000C30D83 /* SBBookDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EE8191F4557E000C30D83 /* SBBookDetailVC.m */; };
@@ -76,6 +77,8 @@
 		491FE8811F3EBC01002723DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		491FE8841F3EBC01002723DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		491FE8861F3EBC01002723DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494BF2641F47EC0600E1340B /* UIView+LSAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LSAdd.h"; sourceTree = "<group>"; };
+		494BF2651F47EC0600E1340B /* UIView+LSAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LSAdd.m"; sourceTree = "<group>"; };
 		494EE8121F4551EC00C30D83 /* SBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBaseViewController.h; sourceTree = "<group>"; };
 		494EE8131F4551EC00C30D83 /* SBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBaseViewController.m; sourceTree = "<group>"; };
 		494EE8151F45535B00C30D83 /* SBVCHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBVCHeaderView.h; sourceTree = "<group>"; };
@@ -226,6 +229,8 @@
 				49DADF171F400162005DD5F6 /* Utils.m */,
 				49958EC81F45924400A9099C /* UIButton+LSAdd.h */,
 				49958EC91F45924400A9099C /* UIButton+LSAdd.m */,
+				494BF2641F47EC0600E1340B /* UIView+LSAdd.h */,
+				494BF2651F47EC0600E1340B /* UIView+LSAdd.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -610,6 +615,7 @@
 				491C6E0B1F40AAF300001F2A /* BookInfoRespModel.m in Sources */,
 				491C6E141F40AE6F00001F2A /* ImageInfoModel.m in Sources */,
 				494EE8141F4551EC00C30D83 /* SBBaseViewController.m in Sources */,
+				494BF2661F47EC0600E1340B /* UIView+LSAdd.m in Sources */,
 				49B7F1631F3ECCE8008EB320 /* LSMessageViewController.m in Sources */,
 				4978EDC21F4204860072D08A /* SBBookInfoCollectionCell.m in Sources */,
 				49DADF1E1F4002DB005DD5F6 /* AppEngine.m in Sources */,
