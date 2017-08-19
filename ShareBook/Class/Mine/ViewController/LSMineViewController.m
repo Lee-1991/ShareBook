@@ -11,22 +11,17 @@
 #import "SBMineUserInfoCell.h"
 #import "SBMineBookStoreCell.h"
 
-@interface LSMineViewController ()
+@interface LSMineViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (strong,nonatomic) UITableView *mTableView;
 
 @end
 
 @implementation LSMineViewController
 
--(instancetype)init{
-    self = [super initWithStyle:UITableViewStylePlain];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+    [self setupContentView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,10 +29,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
+    
     return 2;
 }
 
@@ -192,8 +188,11 @@
     }
 }
 
-
-
-
+-(void)setupContentView{
+    _mTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, ScreenH-49)];
+    [self.view addSubview:_mTableView];
+    _mTableView.delegate = self;
+    _mTableView.dataSource = self;
+}
 
 @end

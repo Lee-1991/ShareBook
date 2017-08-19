@@ -46,7 +46,7 @@
 }
 
 +(CGFloat)heightOfCell{
-    return 44*Fit_RATE;
+    return 55*Fit_RATE;
 }
 
 -(void)setupContentView{

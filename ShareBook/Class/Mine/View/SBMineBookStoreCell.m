@@ -127,7 +127,7 @@ static NSString* kBookInfoCellId = @"kBookInfoCellId";
     _mCountBtn.titleLabel.font = FONT(11);
     [_mCountBtn setTitleColor:ColorBlue forState:UIControlStateNormal];
     [_mCountBtn setTitle:@"2本>" forState:UIControlStateNormal];
-    _mCountBtn.userInteractionEnabled = NO;
+    _mCountBtn.userInteractionEnabled = NO; 
     [_mCountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.mas_right).offset(-margin);
         make.centerY.equalTo(tipsLbl.mas_centerY);

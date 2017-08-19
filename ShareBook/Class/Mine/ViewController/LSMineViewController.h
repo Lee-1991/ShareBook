@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LSMineViewController : UITableViewController
+@interface LSMineViewController : UIViewController
 
 @end
