@@ -22,6 +22,8 @@
 		491FE8821F3EBC01002723DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491FE8811F3EBC01002723DD /* Assets.xcassets */; };
 		491FE8851F3EBC01002723DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491FE8831F3EBC01002723DD /* LaunchScreen.storyboard */; };
 		494BF2661F47EC0600E1340B /* UIView+LSAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 494BF2651F47EC0600E1340B /* UIView+LSAdd.m */; };
+		494BF2691F47EE5A00E1340B /* LSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494BF2681F47EE5A00E1340B /* LSMineViewController.m */; };
+		494BF26C1F47F0F400E1340B /* SBMineNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 494BF26B1F47F0F400E1340B /* SBMineNormalCell.m */; };
 		494EE8141F4551EC00C30D83 /* SBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EE8131F4551EC00C30D83 /* SBBaseViewController.m */; };
 		494EE8171F45535B00C30D83 /* SBVCHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EE8161F45535B00C30D83 /* SBVCHeaderView.m */; };
 		494EE81A1F4557E000C30D83 /* SBBookDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EE8191F4557E000C30D83 /* SBBookDetailVC.m */; };
@@ -41,7 +43,6 @@
 		49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */; };
 		49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */; };
 		49B7F1631F3ECCE8008EB320 /* LSMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1621F3ECCE8008EB320 /* LSMessageViewController.m */; };
-		49B7F1661F3ECCF2008EB320 /* LSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1651F3ECCF2008EB320 /* LSMineViewController.m */; };
 		49CB82021F41DD430053A75E /* IndicatorTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB82011F41DD430053A75E /* IndicatorTab.m */; };
 		49CB82051F41E5310053A75E /* MessagePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB82041F41E5310053A75E /* MessagePage.m */; };
 		49DADF141F3FFE37005DD5F6 /* NetWorkErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DADF131F3FFE37005DD5F6 /* NetWorkErrorModel.m */; };
@@ -79,6 +80,10 @@
 		491FE8861F3EBC01002723DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		494BF2641F47EC0600E1340B /* UIView+LSAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LSAdd.h"; sourceTree = "<group>"; };
 		494BF2651F47EC0600E1340B /* UIView+LSAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LSAdd.m"; sourceTree = "<group>"; };
+		494BF2671F47EE5A00E1340B /* LSMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMineViewController.h; sourceTree = "<group>"; };
+		494BF2681F47EE5A00E1340B /* LSMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMineViewController.m; sourceTree = "<group>"; };
+		494BF26A1F47F0F400E1340B /* SBMineNormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBMineNormalCell.h; sourceTree = "<group>"; };
+		494BF26B1F47F0F400E1340B /* SBMineNormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBMineNormalCell.m; sourceTree = "<group>"; };
 		494EE8121F4551EC00C30D83 /* SBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBaseViewController.h; sourceTree = "<group>"; };
 		494EE8131F4551EC00C30D83 /* SBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBaseViewController.m; sourceTree = "<group>"; };
 		494EE8151F45535B00C30D83 /* SBVCHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBVCHeaderView.h; sourceTree = "<group>"; };
@@ -117,8 +122,6 @@
 		49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBookViewController.m; sourceTree = "<group>"; };
 		49B7F1611F3ECCE8008EB320 /* LSMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMessageViewController.h; sourceTree = "<group>"; };
 		49B7F1621F3ECCE8008EB320 /* LSMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMessageViewController.m; sourceTree = "<group>"; };
-		49B7F1641F3ECCF2008EB320 /* LSMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMineViewController.h; sourceTree = "<group>"; };
-		49B7F1651F3ECCF2008EB320 /* LSMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMineViewController.m; sourceTree = "<group>"; };
 		49CB82001F41DD430053A75E /* IndicatorTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndicatorTab.h; sourceTree = "<group>"; };
 		49CB82011F41DD430053A75E /* IndicatorTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndicatorTab.m; sourceTree = "<group>"; };
 		49CB82031F41E5310053A75E /* MessagePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePage.h; sourceTree = "<group>"; };
@@ -404,6 +407,8 @@
 		49B7F1531F3EC4CC008EB320 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				494BF26A1F47F0F400E1340B /* SBMineNormalCell.h */,
+				494BF26B1F47F0F400E1340B /* SBMineNormalCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -411,8 +416,8 @@
 		49B7F1541F3EC4CC008EB320 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				49B7F1641F3ECCF2008EB320 /* LSMineViewController.h */,
-				49B7F1651F3ECCF2008EB320 /* LSMineViewController.m */,
+				494BF2671F47EE5A00E1340B /* LSMineViewController.h */,
+				494BF2681F47EE5A00E1340B /* LSMineViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -603,9 +608,9 @@
 			files = (
 				491C6E241F40BAB600001F2A /* CheckVcodeReqModel.m in Sources */,
 				491C6E1D1F40B7C700001F2A /* SimpleRespModel.m in Sources */,
-				49B7F1661F3ECCF2008EB320 /* LSMineViewController.m in Sources */,
 				49DADF181F400162005DD5F6 /* Utils.m in Sources */,
 				49CB82051F41E5310053A75E /* MessagePage.m in Sources */,
+				494BF26C1F47F0F400E1340B /* SBMineNormalCell.m in Sources */,
 				49958ED01F45D76900A9099C /* SBUserInfoVC.m in Sources */,
 				4978EDBC1F41EE010072D08A /* SBBorrowBookCellTopView.m in Sources */,
 				49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */,
@@ -633,6 +638,7 @@
 				491FE87A1F3EBC01002723DD /* AppDelegate.m in Sources */,
 				49958ECD1F45B10C00A9099C /* SBHomeMessageCell.m in Sources */,
 				494EE81A1F4557E000C30D83 /* SBBookDetailVC.m in Sources */,
+				494BF2691F47EE5A00E1340B /* LSMineViewController.m in Sources */,
 				49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */,
 				494EE8171F45535B00C30D83 /* SBVCHeaderView.m in Sources */,
 				491C6E0E1F40AB0700001F2A /* BookInfoModel.m in Sources */,
