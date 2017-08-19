@@ -9,6 +9,7 @@
 #import "LSMineViewController.h"
 #import "SBMineNormalCell.h"
 #import "SBMineUserInfoCell.h"
+#import "SBMineBookStoreCell.h"
 
 @interface LSMineViewController ()
 
@@ -55,7 +56,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSInteger cellNum = 1;
+    NSInteger cellNum = 2;
     if (section == 1) {
         cellNum = 5;
     }
@@ -67,6 +68,8 @@
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             heightCell = [SBMineUserInfoCell heightOfCell];
+        }else if (indexPath.row == 1){
+            heightCell = [SBMineBookStoreCell heightOfCell];
         }
     }else if (indexPath.section == 1) {
         heightCell = [SBMineNormalCell heightOfCell];
@@ -95,6 +98,8 @@
     UITableViewCell* cell = nil;
     if (indexPath.row == 0) {
         cell = [self cellUserInfoTableView:tableView indexPath:indexPath];
+    }else if (indexPath.row == 1){
+        cell = [self cellBookStoreTableView:tableView indexPath:indexPath];
     }
     return cell;
 }
@@ -106,6 +111,15 @@
         cell = [[SBMineUserInfoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
     
+    return cell;
+}
+
+-(UITableViewCell *)cellBookStoreTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath{
+    static NSString* cellId = @"mineCellBookStore";
+    SBMineBookStoreCell* cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell == nil) {
+        cell = [[SBMineBookStoreCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+    }
     return cell;
 }
 
@@ -144,7 +158,39 @@
 }
 
 
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            
+        } else if(indexPath.row == 1) {
+            [[SBPageJumpManager shareInstance] pushToUserInfoVCWithUid:000];
+        }
+    } else if(indexPath.section == 1) {
+        switch (indexPath.row) {
+            case 0:
+                
+                break;
+                
+            case 1:
+                
+                break;
+                
+            case 2:
+                
+                break;
+                
+            case 3:
+                
+                break;
+                
+            case 4:
+                
+                break;
+            default:
+                break;
+        }
+    }
+}
 
 
 
