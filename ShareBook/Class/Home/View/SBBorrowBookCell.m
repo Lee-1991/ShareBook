@@ -59,7 +59,8 @@ static NSString* kBookInfoCellId = @"kBookInfoCellId";
 {
     //最多展示4个
 //    NSInteger cellCount = self.mBooks.count > 4 ? 4 : self.mBooks.count;
-    return 4;
+    
+    return [Utils getRandomNumber:1 to:5];
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
