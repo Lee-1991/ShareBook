@@ -12,6 +12,7 @@
 #import "SBSettingVC.h"
 #import "SBPurseVC.h"
 #import "SBHistoryVC.h"
+#import "SBChargeVC.h"
 
 @implementation SBPageJumpManager
 
@@ -56,6 +57,11 @@
 
 -(void)pushToHistoryVC{
     SBHistoryVC *vc = [[SBHistoryVC alloc] init];
+    [[self currentVC].navigationController pushViewController:vc animated:YES];
+}
+
+-(void)pushToChargeVC{
+    SBChargeVC *vc = [[SBChargeVC alloc] init];
     [[self currentVC].navigationController pushViewController:vc animated:YES];
 }
 

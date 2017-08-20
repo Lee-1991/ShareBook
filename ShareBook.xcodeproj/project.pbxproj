@@ -25,6 +25,7 @@
 		4925B2A51F495EAE002307CB /* ITOToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925B2A41F495EAE002307CB /* ITOToast.m */; };
 		4925B2A81F4990CA002307CB /* SBPurseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925B2A71F4990CA002307CB /* SBPurseVC.m */; };
 		4925B2AB1F499165002307CB /* SBHistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925B2AA1F499165002307CB /* SBHistoryVC.m */; };
+		4925B2AE1F4998B8002307CB /* SBChargeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925B2AD1F4998B8002307CB /* SBChargeVC.m */; };
 		494BF2661F47EC0600E1340B /* UIView+LSAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 494BF2651F47EC0600E1340B /* UIView+LSAdd.m */; };
 		494BF26C1F47F0F400E1340B /* SBMineNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 494BF26B1F47F0F400E1340B /* SBMineNormalCell.m */; };
 		494BF2721F47FF9600E1340B /* SBMineUserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 494BF2711F47FF9600E1340B /* SBMineUserInfoCell.m */; };
@@ -92,6 +93,8 @@
 		4925B2A71F4990CA002307CB /* SBPurseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPurseVC.m; sourceTree = "<group>"; };
 		4925B2A91F499165002307CB /* SBHistoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBHistoryVC.h; sourceTree = "<group>"; };
 		4925B2AA1F499165002307CB /* SBHistoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBHistoryVC.m; sourceTree = "<group>"; };
+		4925B2AC1F4998B8002307CB /* SBChargeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBChargeVC.h; sourceTree = "<group>"; };
+		4925B2AD1F4998B8002307CB /* SBChargeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBChargeVC.m; sourceTree = "<group>"; };
 		494BF2641F47EC0600E1340B /* UIView+LSAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LSAdd.h"; sourceTree = "<group>"; };
 		494BF2651F47EC0600E1340B /* UIView+LSAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LSAdd.m"; sourceTree = "<group>"; };
 		494BF26A1F47F0F400E1340B /* SBMineNormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBMineNormalCell.h; sourceTree = "<group>"; };
@@ -446,6 +449,8 @@
 				4925B2A11F49531E002307CB /* SBSettingVC.m */,
 				4925B2A61F4990CA002307CB /* SBPurseVC.h */,
 				4925B2A71F4990CA002307CB /* SBPurseVC.m */,
+				4925B2AC1F4998B8002307CB /* SBChargeVC.h */,
+				4925B2AD1F4998B8002307CB /* SBChargeVC.m */,
 				4925B2A91F499165002307CB /* SBHistoryVC.h */,
 				4925B2AA1F499165002307CB /* SBHistoryVC.m */,
 			);
@@ -648,6 +653,7 @@
 				49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */,
 				491C6E171F40B6CB00001F2A /* TabModel.m in Sources */,
 				495D2C6C1F3F722A0092790F /* LSNetWorkHelper.m in Sources */,
+				4925B2AE1F4998B8002307CB /* SBChargeVC.m in Sources */,
 				4925B2AB1F499165002307CB /* SBHistoryVC.m in Sources */,
 				4978EDBF1F41F6E50072D08A /* SBBorrowBookCell.m in Sources */,
 				491C6E0B1F40AAF300001F2A /* BookInfoRespModel.m in Sources */,

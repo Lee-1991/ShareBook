@@ -26,4 +26,6 @@
 
 -(void)pushToHistoryVC;
 
+-(void)pushToChargeVC;
+
 @end

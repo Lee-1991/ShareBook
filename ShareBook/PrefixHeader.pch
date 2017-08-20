@@ -62,7 +62,11 @@
 
 #define ColorSeparateLine [Utils getUIColorFromHex:0xffdedede]
 
-#define ColorLightGray  [Utils getUIColorFromHex:0xffa5a5a5]
+#define ColorTextLightGray  [Utils getUIColorFromHex:0xffa5a5a5]
+/**
+ 黑色333333
+ */
+#define ColorTextBlack   [Utils getUIColorFromHex:0xff333333]
 
 #define ColorBlue  [Utils getUIColorFromHex:0xff43c6ff]
 

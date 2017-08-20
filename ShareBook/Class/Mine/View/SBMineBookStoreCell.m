@@ -115,7 +115,7 @@ static NSString* kBookInfoCellId = @"kBookInfoCellId";
     UILabel* tipsLbl = [[UILabel alloc] init];
     [self addSubview:tipsLbl];
     tipsLbl.font = FONT(11);
-    tipsLbl.textColor = ColorLightGray;
+    tipsLbl.textColor = ColorTextLightGray;
     tipsLbl.text = @"我的书店";
     [tipsLbl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).offset(margin);

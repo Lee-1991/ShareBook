@@ -27,6 +27,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)onClickChargeBtn:(UIButton *)sender{
+    [[SBPageJumpManager shareInstance] pushToChargeVC];
+}
+
 -(void)setupContentView{
     
     UIView *backView = [[UIView alloc] init];
@@ -66,6 +70,7 @@
     [chargeBtn setTitleColor:[Utils getUIColorFromHex:0xffffffff] forState:UIControlStateNormal];
     [chargeBtn setBackgroundColor:ColorBlue];
     [chargeBtn setTitle:@"充值" forState:UIControlStateNormal];
+    [chargeBtn addTarget:self action:@selector(onClickChargeBtn:) forControlEvents:UIControlEventTouchUpInside];
     [chargeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(backView.mas_bottom).offset(2*margin);
         make.left.equalTo(self.view.mas_left).offset(margin);
