@@ -164,11 +164,11 @@
     } else if(indexPath.section == 1) {
         switch (indexPath.row) {
             case 0:
-                
+                [[SBPageJumpManager shareInstance] pushToPurseVC];
                 break;
                 
             case 1:
-                
+                [[SBPageJumpManager shareInstance] pushToHistoryVC];
                 break;
                 
             case 2:
@@ -180,7 +180,7 @@
                 break;
                 
             case 4:
-                
+                [[SBPageJumpManager shareInstance] pushToSettingVC];
                 break;
             default:
                 break;
@@ -190,6 +190,7 @@
 
 -(void)setupContentView{
     _mTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, ScreenH-49)];
+    _mTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:_mTableView];
     _mTableView.delegate = self;
     _mTableView.dataSource = self;

@@ -79,7 +79,7 @@
     NSArray* items = [NSArray arrayWithObjects:@"借入",@"借出", nil];
     [indicator setData:items];
     
-    _mTableView = [[MessagePage alloc] initWithFrame:CGRectMake(0, 108, ScreenW, ScreenH - 108)];
+    _mTableView = [[MessagePage alloc] initWithFrame:CGRectMake(0, 108, ScreenW, ScreenH - 108 - 49)];
     [self.view addSubview:_mTableView];
     [_mTableView setRefreshType:SetRefreshTypeHeaderOnly];
     _mTableView.mMessagePageDelegate = self;

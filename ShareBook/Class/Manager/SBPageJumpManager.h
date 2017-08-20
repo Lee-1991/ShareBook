@@ -20,4 +20,10 @@
 
 -(void)pushToUserInfoVCWithUid:(UInt64)uid;
 
+-(void)pushToSettingVC;
+
+-(void)pushToPurseVC;
+
+-(void)pushToHistoryVC;
+
 @end

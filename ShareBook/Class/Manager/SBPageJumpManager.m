@@ -9,6 +9,9 @@
 #import "SBPageJumpManager.h"
 #import "SBBookDetailVC.h"
 #import "SBUserInfoVC.h"
+#import "SBSettingVC.h"
+#import "SBPurseVC.h"
+#import "SBHistoryVC.h"
 
 @implementation SBPageJumpManager
 
@@ -38,6 +41,21 @@
 -(void)pushToUserInfoVCWithUid:(UInt64)uid{
     SBUserInfoVC *vc = [[SBUserInfoVC alloc] init];
     vc.mUid = uid;
+    [[self currentVC].navigationController pushViewController:vc animated:YES];
+}
+
+-(void)pushToSettingVC{
+    SBSettingVC *vc = [[SBSettingVC alloc] init];
+    [[self currentVC].navigationController pushViewController:vc animated:YES];
+}
+
+-(void)pushToPurseVC{
+    SBPurseVC* vc = [[SBPurseVC alloc] init];
+    [[self currentVC].navigationController pushViewController:vc animated:YES];
+}
+
+-(void)pushToHistoryVC{
+    SBHistoryVC *vc = [[SBHistoryVC alloc] init];
     [[self currentVC].navigationController pushViewController:vc animated:YES];
 }
 
