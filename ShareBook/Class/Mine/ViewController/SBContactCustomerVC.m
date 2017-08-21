@@ -1,32 +1,27 @@
 //
-//  SBModifyInfoVC.m
+//  SBContactCustomerVC.m
 //  ShareBook
 //
 //  Created by Lee on 2017/8/21.
 //  Copyright © 2017年 Lee. All rights reserved.
 //
 
-#import "SBModifyInfoVC.h"
+#import "SBContactCustomerVC.h"
 
-@interface SBModifyInfoVC ()
+@interface SBContactCustomerVC ()
 
 @end
 
-@implementation SBModifyInfoVC
+@implementation SBContactCustomerVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.mHeaderView.mTitleLbl.text = @"个人信息";
-    self.mHeaderView.mFinishBtn.hidden = NO;
+    self.mHeaderView.mTitleLbl.text = @"联系客服";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
--(void)onClickTitleViewFinishBtn:(UIButton *)sender{
-    [self backToLastControllerByPop];
 }
 
 /*

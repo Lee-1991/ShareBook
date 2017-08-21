@@ -17,6 +17,8 @@
 #import "SBAddBookVC.h"
 #import "SBLoginVC.h"
 #import "SBRegisterVC.h"
+#import "SBContactCustomerVC.h"
+#import "SBChargeProtocolVC.h"
 
 @implementation SBPageJumpManager
 
@@ -87,6 +89,16 @@
 
 -(void)pushToRegisterVC{
     SBRegisterVC *vc = [[SBRegisterVC alloc] init];
+    [[self currentVC].navigationController pushViewController:vc animated:YES];
+}
+
+-(void)pushToContactCustomerVC{
+    SBContactCustomerVC* vc = [[SBContactCustomerVC alloc] init];
+    [[self currentVC].navigationController pushViewController:vc animated:YES];
+}
+
+-(void)pushToChargeProtocolVC{
+    SBChargeProtocolVC *vc = [[SBChargeProtocolVC alloc] init];
     [[self currentVC].navigationController pushViewController:vc animated:YES];
 }
 

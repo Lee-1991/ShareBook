@@ -36,4 +36,8 @@
 
 -(void)pushToRegisterVC;
 
+-(void)pushToContactCustomerVC;
+
+-(void)pushToChargeProtocolVC;
+
 @end

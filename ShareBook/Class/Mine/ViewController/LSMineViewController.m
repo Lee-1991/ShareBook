@@ -172,11 +172,11 @@
                 break;
                 
             case 2:
-                
+                [[SBPageJumpManager shareInstance] pushToContactCustomerVC];
                 break;
                 
             case 3:
-                
+                [[SBPageJumpManager shareInstance] pushToChargeProtocolVC];
                 break;
                 
             case 4:

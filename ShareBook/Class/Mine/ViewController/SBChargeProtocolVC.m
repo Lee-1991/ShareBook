@@ -1,32 +1,26 @@
 //
-//  SBModifyInfoVC.m
+//  SBChargeProtocolVC.m
 //  ShareBook
 //
 //  Created by Lee on 2017/8/21.
 //  Copyright © 2017年 Lee. All rights reserved.
 //
 
-#import "SBModifyInfoVC.h"
+#import "SBChargeProtocolVC.h"
 
-@interface SBModifyInfoVC ()
+@interface SBChargeProtocolVC ()
 
 @end
 
-@implementation SBModifyInfoVC
+@implementation SBChargeProtocolVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.mHeaderView.mTitleLbl.text = @"个人信息";
-    self.mHeaderView.mFinishBtn.hidden = NO;
+    self.mHeaderView.mTitleLbl.text = @"充值协议";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
--(void)onClickTitleViewFinishBtn:(UIButton *)sender{
-    [self backToLastControllerByPop];
 }
 
 /*

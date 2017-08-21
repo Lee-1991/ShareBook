@@ -50,6 +50,9 @@
 		49AC9EC31F4A79470015DBED /* SBAddBookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AC9EC21F4A79470015DBED /* SBAddBookVC.m */; };
 		49AC9EC61F4A85E00015DBED /* SBLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AC9EC51F4A85E00015DBED /* SBLoginVC.m */; };
 		49AC9EC91F4A90990015DBED /* SBRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AC9EC81F4A90990015DBED /* SBRegisterVC.m */; };
+		49AC9ECC1F4ACE410015DBED /* SBContactCustomerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AC9ECB1F4ACE410015DBED /* SBContactCustomerVC.m */; };
+		49AC9ECF1F4ACFD30015DBED /* SBChargeProtocolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AC9ECE1F4ACFD30015DBED /* SBChargeProtocolVC.m */; };
+		49AC9ED21F4ADA580015DBED /* SBTakeBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AC9ED11F4ADA580015DBED /* SBTakeBookCell.m */; };
 		49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1591F3ECACA008EB320 /* LSTabBarController.m */; };
 		49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */; };
 		49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */; };
@@ -147,6 +150,12 @@
 		49AC9EC51F4A85E00015DBED /* SBLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBLoginVC.m; sourceTree = "<group>"; };
 		49AC9EC71F4A90990015DBED /* SBRegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRegisterVC.h; sourceTree = "<group>"; };
 		49AC9EC81F4A90990015DBED /* SBRegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRegisterVC.m; sourceTree = "<group>"; };
+		49AC9ECA1F4ACE410015DBED /* SBContactCustomerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBContactCustomerVC.h; sourceTree = "<group>"; };
+		49AC9ECB1F4ACE410015DBED /* SBContactCustomerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBContactCustomerVC.m; sourceTree = "<group>"; };
+		49AC9ECD1F4ACFD30015DBED /* SBChargeProtocolVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBChargeProtocolVC.h; sourceTree = "<group>"; };
+		49AC9ECE1F4ACFD30015DBED /* SBChargeProtocolVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBChargeProtocolVC.m; sourceTree = "<group>"; };
+		49AC9ED01F4ADA580015DBED /* SBTakeBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTakeBookCell.h; sourceTree = "<group>"; };
+		49AC9ED11F4ADA580015DBED /* SBTakeBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTakeBookCell.m; sourceTree = "<group>"; };
 		49B7F1581F3ECACA008EB320 /* LSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabBarController.h; sourceTree = "<group>"; };
 		49B7F1591F3ECACA008EB320 /* LSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabBarController.m; sourceTree = "<group>"; };
 		49B7F15B1F3ECCC5008EB320 /* LSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHomeViewController.h; sourceTree = "<group>"; };
@@ -308,6 +317,8 @@
 		49B7F1461F3EC4CC008EB320 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				49AC9ED01F4ADA580015DBED /* SBTakeBookCell.h */,
+				49AC9ED11F4ADA580015DBED /* SBTakeBookCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -473,6 +484,10 @@
 				49AC9EC51F4A85E00015DBED /* SBLoginVC.m */,
 				49AC9EC71F4A90990015DBED /* SBRegisterVC.h */,
 				49AC9EC81F4A90990015DBED /* SBRegisterVC.m */,
+				49AC9ECA1F4ACE410015DBED /* SBContactCustomerVC.h */,
+				49AC9ECB1F4ACE410015DBED /* SBContactCustomerVC.m */,
+				49AC9ECD1F4ACFD30015DBED /* SBChargeProtocolVC.h */,
+				49AC9ECE1F4ACFD30015DBED /* SBChargeProtocolVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -693,8 +708,11 @@
 				491C6E051F40AA7F00001F2A /* BaseRespModel.m in Sources */,
 				49958EC41F45899600A9099C /* SBBookDetailInfoView.m in Sources */,
 				49958EC71F4590AC00A9099C /* SBBookDetailBottomView.m in Sources */,
+				49AC9ED21F4ADA580015DBED /* SBTakeBookCell.m in Sources */,
+				49AC9ECC1F4ACE410015DBED /* SBContactCustomerVC.m in Sources */,
 				4925B2A81F4990CA002307CB /* SBPurseVC.m in Sources */,
 				49DADF141F3FFE37005DD5F6 /* NetWorkErrorModel.m in Sources */,
+				49AC9ECF1F4ACFD30015DBED /* SBChargeProtocolVC.m in Sources */,
 				4925B2A21F49531E002307CB /* SBSettingVC.m in Sources */,
 				495D2C661F3F70E00092790F /* LSNetWorkManager.m in Sources */,
 				49CB82021F41DD430053A75E /* IndicatorTab.m in Sources */,

@@ -24,5 +24,7 @@
  */
 -(void)backToHomeViewCotrollerByPop;
 
+-(void)onClickTitleViewFinishBtn:(UIButton *)sender;
+
 
 @end

@@ -45,7 +45,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;
+    return 10;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -85,7 +85,7 @@
     NSArray* items = [NSArray arrayWithObjects:@"距离",@"数量",@"优选",@"好友", nil];
     [indicator setData:items];
     
-    _mTableView = [[MessagePage alloc] initWithFrame:CGRectMake(0, 64, ScreenW, ScreenH - 64)];
+    _mTableView = [[MessagePage alloc] initWithFrame:CGRectMake(0, 64, ScreenW, ScreenH - 64-49)];
     [self.view addSubview:_mTableView];
     _mTableView.mMessagePageDelegate = self;
     _mTableView.dataSource = self;

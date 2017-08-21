@@ -7,8 +7,12 @@
 //
 
 #import "SBHistoryVC.h"
+#import "MessagePage.h"
+#import "SBTakeBookCell.h"
 
-@interface SBHistoryVC ()
+@interface SBHistoryVC ()<MessagePageDelegate,UITableViewDelegate,UITableViewDataSource>
+
+@property (strong,nonatomic) MessagePage *mTableView;
 
 @end
 
@@ -18,6 +22,7 @@
     [super viewDidLoad];
     
     self.mHeaderView.mTitleLbl.text = @"历史记录";
+    [self setupContentView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,14 +30,38 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//MARK: UITableView
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
 }
-*/
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return [SBTakeBookCell heightOfCell];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *cellId = @"";
+    SBTakeBookCell* cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell == nil) {
+        cell = [[SBTakeBookCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+    }
+    return cell;
+}
+
+-(void)doRefresh{
+    [_mTableView comepleteRefreshAndLoadMore];
+}
+
+-(void)doLoadMore{
+    [_mTableView comepleteRefreshAndLoadMore];
+}
+
+-(void)setupContentView{
+    _mTableView = [[MessagePage alloc] initWithFrame:CGRectMake(0, 64, ScreenW, ScreenH-64)];
+    [self.view addSubview:_mTableView];
+    _mTableView.mMessagePageDelegate = self;
+    _mTableView.delegate = self;
+    _mTableView.dataSource = self;
+}
 
 @end

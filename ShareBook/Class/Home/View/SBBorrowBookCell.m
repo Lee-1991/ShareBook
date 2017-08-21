@@ -45,7 +45,7 @@ static NSString* kBookInfoCellId = @"kBookInfoCellId";
 }
 
 +(CGFloat)heightOfCell{
-    return 200;
+    return 210*Fit_RATE;
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -119,7 +119,7 @@ static NSString* kBookInfoCellId = @"kBookInfoCellId";
         make.left.equalTo(self.mas_left).offset(10);
         make.height.mas_equalTo(height);
         make.width.mas_equalTo(width);
-        make.bottom.equalTo(self.mas_bottom).offset(0*Fit_RATE);
+        make.top.equalTo(_mTopView.mas_bottom).offset(16*Fit_RATE);
     }];
     _mBookView.backgroundColor = [UIColor clearColor];
     _mBookView.showsHorizontalScrollIndicator = NO;
@@ -129,6 +129,15 @@ static NSString* kBookInfoCellId = @"kBookInfoCellId";
     [_mBookView registerClass:[SBBookInfoCollectionCell class] forCellWithReuseIdentifier:kBookInfoCellId];
     _mBookView.delegate = self;
     _mBookView.dataSource = self;
+    
+    UIView* line = [[UIView alloc] initSeparateLineDefault];
+    [self addSubview:line];
+    [line mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.mas_left);
+        make.right.equalTo(self.mas_right);
+        make.bottom.equalTo(self.mas_bottom);
+        make.height.mas_equalTo(1*Fit_RATE);
+    }];
     
 }
 

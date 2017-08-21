@@ -75,7 +75,7 @@
         make.bottom.equalTo(headerView.mas_bottom).offset(-13*Fit_RATE);
     }];
     
-    _mTableView = [[MessagePage alloc] initWithFrame:CGRectMake(0, 66, ScreenW, ScreenH-66)];
+    _mTableView = [[MessagePage alloc] initWithFrame:CGRectMake(0, 66, ScreenW, ScreenH-66-49)];
     [self.view addSubview:_mTableView];
     [_mTableView setRefreshType:SetRefreshTypeHeaderOnly];
     _mTableView.mMessagePageDelegate = self;

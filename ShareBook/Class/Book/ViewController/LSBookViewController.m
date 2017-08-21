@@ -9,6 +9,7 @@
 #import "LSBookViewController.h"
 #import "IndicatorTab.h"
 #import "MessagePage.h"
+#import "SBTakeBookCell.h"
 
 @interface LSBookViewController ()<IndicatorTabDelegete,MessagePageDelegate,UITableViewDataSource,UITableViewDelegate>
 
@@ -31,16 +32,19 @@
 
 //MARK: UITableView
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
+    return 10;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 0;
+    return [SBTakeBookCell heightOfCell];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellId = @"";
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    SBTakeBookCell* cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell == nil) {
+        cell = [[SBTakeBookCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+    }
     return cell;
 }
 
@@ -52,7 +56,7 @@
 
 //MARK: MessagepageDelegate
 -(void)doRefresh{
-    
+    [_mTableView comepleteRefreshAndLoadMore];
 }
 
 -(void)doLoadMore{}

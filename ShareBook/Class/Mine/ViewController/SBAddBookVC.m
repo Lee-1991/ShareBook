@@ -25,6 +25,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)onClickTitleViewFinishBtn:(UIButton *)sender{
+    [self backToLastControllerByPop];
+}
+
+
 /*
 #pragma mark - Navigation
 

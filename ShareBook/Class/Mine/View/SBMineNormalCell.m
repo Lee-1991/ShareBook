@@ -72,7 +72,7 @@
     
     _mTipsLbl = [[UILabel alloc] init];
     [self addSubview:_mTipsLbl];
-    _mTipsLbl.font = FONT(10);
+    _mTipsLbl.font = FONT(14);
     _mTipsLbl.textColor = [Utils getUIColorFromHex:0xffa5a5a5];
     [_mTipsLbl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(_mNameLbl.mas_centerY);
