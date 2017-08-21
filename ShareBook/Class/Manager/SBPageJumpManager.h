@@ -32,4 +32,8 @@
 
 -(void)pushToAddBookVCTitle:(NSString *)title;
 
+-(void)pushToLoginVC;
+
+-(void)pushToRegisterVC;
+
 @end

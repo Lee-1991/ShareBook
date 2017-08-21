@@ -10,6 +10,12 @@
 
 @implementation UIView (LSAdd)
 
+-(instancetype)initSeparateLineDefault{
+    self = [self init];
+    self.backgroundColor = ColorSeparateLine;
+    return self;
+}
+
 //MARK: 坐标系扩展
 -(CGFloat)x
 {

@@ -48,7 +48,7 @@
 /**
  适配
  */
-#define NormalMargin  10
+#define NormalMargin  10*Fit_RATE
 
 #define Fit_RATE    1
 
@@ -67,6 +67,8 @@
  黑色333333
  */
 #define ColorTextBlack   [Utils getUIColorFromHex:0xff333333]
+
+#define ColorTextOrange  [Utils getUIColorFromHex:0xffff8400]
 
 #define ColorBlue  [Utils getUIColorFromHex:0xff43c6ff]
 

@@ -19,6 +19,7 @@ typedef NS_ENUM(NSUInteger, LSButtonStyle) {
 
 @interface UIButton (LSAdd)
 
+-(instancetype)initWithFont:(UIFont *)font titleColor:(UIColor *)color title:(NSString *)title;
 
 /**
  *  设置button的titleLabel和imageView的布局样式，及间距

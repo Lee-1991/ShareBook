@@ -15,6 +15,8 @@
 #import "SBChargeVC.h"
 #import "SBModifyInfoVC.h"
 #import "SBAddBookVC.h"
+#import "SBLoginVC.h"
+#import "SBRegisterVC.h"
 
 @implementation SBPageJumpManager
 
@@ -75,6 +77,16 @@
 -(void)pushToAddBookVCTitle:(NSString *)title{
     SBAddBookVC *vc = [[SBAddBookVC alloc] init];
     vc.mTitleStr = title;
+    [[self currentVC].navigationController pushViewController:vc animated:YES];
+}
+
+-(void)pushToLoginVC{
+    SBLoginVC *vc = [[SBLoginVC alloc] init];
+    [[self currentVC].navigationController pushViewController:vc animated:YES];
+}
+
+-(void)pushToRegisterVC{
+    SBRegisterVC *vc = [[SBRegisterVC alloc] init];
     [[self currentVC].navigationController pushViewController:vc animated:YES];
 }
 

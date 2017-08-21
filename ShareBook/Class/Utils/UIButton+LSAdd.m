@@ -10,6 +10,14 @@
 
 @implementation UIButton (LSAdd)
 
+-(instancetype)initWithFont:(UIFont *)font titleColor:(UIColor *)color title:(NSString *)title{
+    self = [self init];
+    self.titleLabel.font = font;
+    [self setTitleColor:color forState:UIControlStateNormal];
+    [self setTitle:title forState:UIControlStateNormal];
+    return self;
+}
+
 - (void)layoutButtonWithStyle:(LSButtonStyle)style
               imageTitleSpace:(CGFloat)space {
     /**

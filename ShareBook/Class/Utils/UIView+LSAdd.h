@@ -31,6 +31,8 @@
  */
 @property (nonatomic, assign) CGFloat height;
 
+-(instancetype)initSeparateLineDefault;
+
 
 
 @end

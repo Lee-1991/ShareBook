@@ -48,6 +48,8 @@
 		49958ED31F45DA2000A9099C /* SBUserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958ED21F45DA2000A9099C /* SBUserInfoView.m */; };
 		49AC9EC01F4A79340015DBED /* SBModifyInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AC9EBF1F4A79340015DBED /* SBModifyInfoVC.m */; };
 		49AC9EC31F4A79470015DBED /* SBAddBookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AC9EC21F4A79470015DBED /* SBAddBookVC.m */; };
+		49AC9EC61F4A85E00015DBED /* SBLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AC9EC51F4A85E00015DBED /* SBLoginVC.m */; };
+		49AC9EC91F4A90990015DBED /* SBRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AC9EC81F4A90990015DBED /* SBRegisterVC.m */; };
 		49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1591F3ECACA008EB320 /* LSTabBarController.m */; };
 		49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */; };
 		49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */; };
@@ -141,6 +143,10 @@
 		49AC9EBF1F4A79340015DBED /* SBModifyInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBModifyInfoVC.m; sourceTree = "<group>"; };
 		49AC9EC11F4A79470015DBED /* SBAddBookVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAddBookVC.h; sourceTree = "<group>"; };
 		49AC9EC21F4A79470015DBED /* SBAddBookVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBAddBookVC.m; sourceTree = "<group>"; };
+		49AC9EC41F4A85E00015DBED /* SBLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBLoginVC.h; sourceTree = "<group>"; };
+		49AC9EC51F4A85E00015DBED /* SBLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBLoginVC.m; sourceTree = "<group>"; };
+		49AC9EC71F4A90990015DBED /* SBRegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRegisterVC.h; sourceTree = "<group>"; };
+		49AC9EC81F4A90990015DBED /* SBRegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRegisterVC.m; sourceTree = "<group>"; };
 		49B7F1581F3ECACA008EB320 /* LSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabBarController.h; sourceTree = "<group>"; };
 		49B7F1591F3ECACA008EB320 /* LSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabBarController.m; sourceTree = "<group>"; };
 		49B7F15B1F3ECCC5008EB320 /* LSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHomeViewController.h; sourceTree = "<group>"; };
@@ -463,6 +469,10 @@
 				49AC9EBF1F4A79340015DBED /* SBModifyInfoVC.m */,
 				49AC9EC11F4A79470015DBED /* SBAddBookVC.h */,
 				49AC9EC21F4A79470015DBED /* SBAddBookVC.m */,
+				49AC9EC41F4A85E00015DBED /* SBLoginVC.h */,
+				49AC9EC51F4A85E00015DBED /* SBLoginVC.m */,
+				49AC9EC71F4A90990015DBED /* SBRegisterVC.h */,
+				49AC9EC81F4A90990015DBED /* SBRegisterVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -696,7 +706,9 @@
 				49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */,
 				494EE8171F45535B00C30D83 /* SBVCHeaderView.m in Sources */,
 				491C6E0E1F40AB0700001F2A /* BookInfoModel.m in Sources */,
+				49AC9EC61F4A85E00015DBED /* SBLoginVC.m in Sources */,
 				49958ECA1F45924400A9099C /* UIButton+LSAdd.m in Sources */,
+				49AC9EC91F4A90990015DBED /* SBRegisterVC.m in Sources */,
 				491FE8771F3EBC01002723DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -43,7 +43,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     CGFloat heighHeader = 0;
     if (section == 1) {
-        heighHeader = 10*Fit_RATE;
+        heighHeader = 5*Fit_RATE;
     }
     return heighHeader;
 }
@@ -146,7 +146,7 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     UIView* backView = [[UIView alloc] init];
     [cell addSubview:backView];
-    backView.backgroundColor = [UIColor orangeColor];
+    backView.backgroundColor = ColorTextOrange;
     [backView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(cell.mas_left).offset(10*Fit_RATE);
         make.right.equalTo(cell.mas_right).offset(-10*Fit_RATE);
@@ -177,7 +177,7 @@
         if (indexPath.row == 0) {
             
         }else{
-            
+            [[SBPageJumpManager shareInstance] pushToLoginVC];
         }
     }
 }
