@@ -114,29 +114,29 @@
         [self.mMessagePageDelegate doRefresh];
     }];
     
-    //设置下拉状态的图片
-    NSMutableArray* pullDownImgs = [[NSMutableArray alloc] init];
-    UIImage* img = [UIImage imageNamed:@"refresh_1"];
-    [pullDownImgs addObject:img];
-    
-    // 设置刷新状态的动画图片
-    NSMutableArray *refreshImages = [NSMutableArray array];
-    //这个6为提供的图片个数，要与之对应
-    for (int i = 1; i<=8; i++)
-    {
-        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"refresh_%d", i]];
-        [refreshImages addObject:image];
-    }
-    
-    // 设置普通状态的动画图片
-    [header setImages:pullDownImgs forState:MJRefreshStateIdle];
-    // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
-    [header setImages:refreshImages forState:MJRefreshStatePulling];
-    // 设置正在刷新状态的动画图片
-    [header setImages:refreshImages forState:MJRefreshStateRefreshing];
-    
-    header.lastUpdatedTimeLabel.hidden = YES;
-    header.stateLabel.hidden = YES;
+//    //设置下拉状态的图片
+//    NSMutableArray* pullDownImgs = [[NSMutableArray alloc] init];
+//    UIImage* img = [UIImage imageNamed:@"refresh_1"];
+//    [pullDownImgs addObject:img];
+//    
+//    // 设置刷新状态的动画图片
+//    NSMutableArray *refreshImages = [NSMutableArray array];
+//    //这个6为提供的图片个数，要与之对应
+//    for (int i = 1; i<=8; i++)
+//    {
+//        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"refresh_%d", i]];
+//        [refreshImages addObject:image];
+//    }
+//    
+//    // 设置普通状态的动画图片
+//    [header setImages:pullDownImgs forState:MJRefreshStateIdle];
+//    // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
+//    [header setImages:refreshImages forState:MJRefreshStatePulling];
+//    // 设置正在刷新状态的动画图片
+//    [header setImages:refreshImages forState:MJRefreshStateRefreshing];
+//    
+//    header.lastUpdatedTimeLabel.hidden = YES;
+//    header.stateLabel.hidden = YES;
     
     // 设置header
     self.mj_header = header;
