@@ -102,7 +102,7 @@ static NSString* kBookInfoCellId = @"kBookInfoCellId";
 
 
 -(void)onClickAddBtn:(UIButton *)sender{
-    
+    [[SBPageJumpManager shareInstance] pushToAddBookVCTitle:@"手动添加"];
 }
 
 -(void)onClickScanBtn:(UIButton *)sender{

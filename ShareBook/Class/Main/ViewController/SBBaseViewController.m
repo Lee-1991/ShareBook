@@ -55,11 +55,13 @@
     [self.navigationController popToViewController:homeVC animated:YES];
 }
 
+-(void)onClickTitleViewFinishBtn:(UIButton *)sender{}
 
 - (void)setupBaseHeaderView{
     _mHeaderView = [[SBVCHeaderView alloc] init];
     [self.view addSubview:_mHeaderView];
     [_mHeaderView.mBackBtn addTarget:self action:@selector(backToLastControllerByPop) forControlEvents:UIControlEventTouchUpInside];
+    [_mHeaderView.mFinishBtn addTarget:self action:@selector(onClickTitleViewFinishBtn:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 @end

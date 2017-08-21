@@ -13,6 +13,8 @@
 #import "SBPurseVC.h"
 #import "SBHistoryVC.h"
 #import "SBChargeVC.h"
+#import "SBModifyInfoVC.h"
+#import "SBAddBookVC.h"
 
 @implementation SBPageJumpManager
 
@@ -62,6 +64,17 @@
 
 -(void)pushToChargeVC{
     SBChargeVC *vc = [[SBChargeVC alloc] init];
+    [[self currentVC].navigationController pushViewController:vc animated:YES];
+}
+
+-(void)pushToModifyInfoVC{
+    SBModifyInfoVC *vc = [[SBModifyInfoVC alloc] init];
+    [[self currentVC].navigationController pushViewController:vc animated:YES];
+}
+
+-(void)pushToAddBookVCTitle:(NSString *)title{
+    SBAddBookVC *vc = [[SBAddBookVC alloc] init];
+    vc.mTitleStr = title;
     [[self currentVC].navigationController pushViewController:vc animated:YES];
 }
 

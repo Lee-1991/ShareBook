@@ -46,6 +46,8 @@
 		49958ECD1F45B10C00A9099C /* SBHomeMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958ECC1F45B10C00A9099C /* SBHomeMessageCell.m */; };
 		49958ED01F45D76900A9099C /* SBUserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958ECF1F45D76900A9099C /* SBUserInfoVC.m */; };
 		49958ED31F45DA2000A9099C /* SBUserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49958ED21F45DA2000A9099C /* SBUserInfoView.m */; };
+		49AC9EC01F4A79340015DBED /* SBModifyInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AC9EBF1F4A79340015DBED /* SBModifyInfoVC.m */; };
+		49AC9EC31F4A79470015DBED /* SBAddBookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AC9EC21F4A79470015DBED /* SBAddBookVC.m */; };
 		49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F1591F3ECACA008EB320 /* LSTabBarController.m */; };
 		49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15C1F3ECCC5008EB320 /* LSHomeViewController.m */; };
 		49B7F1601F3ECCD8008EB320 /* LSBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7F15F1F3ECCD8008EB320 /* LSBookViewController.m */; };
@@ -135,6 +137,10 @@
 		49958ECF1F45D76900A9099C /* SBUserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBUserInfoVC.m; sourceTree = "<group>"; };
 		49958ED11F45DA2000A9099C /* SBUserInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBUserInfoView.h; sourceTree = "<group>"; };
 		49958ED21F45DA2000A9099C /* SBUserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBUserInfoView.m; sourceTree = "<group>"; };
+		49AC9EBE1F4A79340015DBED /* SBModifyInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBModifyInfoVC.h; sourceTree = "<group>"; };
+		49AC9EBF1F4A79340015DBED /* SBModifyInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBModifyInfoVC.m; sourceTree = "<group>"; };
+		49AC9EC11F4A79470015DBED /* SBAddBookVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAddBookVC.h; sourceTree = "<group>"; };
+		49AC9EC21F4A79470015DBED /* SBAddBookVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBAddBookVC.m; sourceTree = "<group>"; };
 		49B7F1581F3ECACA008EB320 /* LSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabBarController.h; sourceTree = "<group>"; };
 		49B7F1591F3ECACA008EB320 /* LSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabBarController.m; sourceTree = "<group>"; };
 		49B7F15B1F3ECCC5008EB320 /* LSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHomeViewController.h; sourceTree = "<group>"; };
@@ -453,6 +459,10 @@
 				4925B2AD1F4998B8002307CB /* SBChargeVC.m */,
 				4925B2A91F499165002307CB /* SBHistoryVC.h */,
 				4925B2AA1F499165002307CB /* SBHistoryVC.m */,
+				49AC9EBE1F4A79340015DBED /* SBModifyInfoVC.h */,
+				49AC9EBF1F4A79340015DBED /* SBModifyInfoVC.m */,
+				49AC9EC11F4A79470015DBED /* SBAddBookVC.h */,
+				49AC9EC21F4A79470015DBED /* SBAddBookVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -652,6 +662,7 @@
 				4978EDBC1F41EE010072D08A /* SBBorrowBookCellTopView.m in Sources */,
 				49B7F15D1F3ECCC5008EB320 /* LSHomeViewController.m in Sources */,
 				491C6E171F40B6CB00001F2A /* TabModel.m in Sources */,
+				49AC9EC01F4A79340015DBED /* SBModifyInfoVC.m in Sources */,
 				495D2C6C1F3F722A0092790F /* LSNetWorkHelper.m in Sources */,
 				4925B2AE1F4998B8002307CB /* SBChargeVC.m in Sources */,
 				4925B2AB1F499165002307CB /* SBHistoryVC.m in Sources */,
@@ -681,6 +692,7 @@
 				494BF27B1F481A6300E1340B /* LSMineViewController.m in Sources */,
 				49958ECD1F45B10C00A9099C /* SBHomeMessageCell.m in Sources */,
 				494EE81A1F4557E000C30D83 /* SBBookDetailVC.m in Sources */,
+				49AC9EC31F4A79470015DBED /* SBAddBookVC.m in Sources */,
 				49B7F15A1F3ECACA008EB320 /* LSTabBarController.m in Sources */,
 				494EE8171F45535B00C30D83 /* SBVCHeaderView.m in Sources */,
 				491C6E0E1F40AB0700001F2A /* BookInfoModel.m in Sources */,

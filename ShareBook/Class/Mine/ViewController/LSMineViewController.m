@@ -40,7 +40,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     CGFloat heighHeader = 0;
     if (section == 1) {
-        heighHeader = 10*Fit_RATE;
+        heighHeader = 5*Fit_RATE;
     }
     return heighHeader;
 }
@@ -157,7 +157,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            
+            [[SBPageJumpManager shareInstance] pushToModifyInfoVC];
         } else if(indexPath.row == 1) {
             [[SBPageJumpManager shareInstance] pushToUserInfoVCWithUid:000];
         }

@@ -10,11 +10,13 @@
 
 @interface SBVCHeaderView : UIView
 
+@property (strong,nonatomic) UIView *mBackgroundView;
+
 @property (strong,nonatomic) UIButton *mBackBtn;
 
 @property (strong,nonatomic) UILabel *mTitleLbl;
 
-@property (strong,nonatomic) UIView *mBackgroundView;
+@property (strong,nonatomic) UIButton *mFinishBtn;
 
 @property (strong,nonatomic) UIView *mSeparateLine;
 

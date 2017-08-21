@@ -28,4 +28,8 @@
 
 -(void)pushToChargeVC;
 
+-(void)pushToModifyInfoVC;
+
+-(void)pushToAddBookVCTitle:(NSString *)title;
+
 @end

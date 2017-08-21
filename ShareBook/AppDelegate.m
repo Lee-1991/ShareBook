@@ -29,6 +29,7 @@
     LSTabBarController* tabVC = [[LSTabBarController alloc] init];
 
     UINavigationController* navVC = [[UINavigationController alloc] initWithRootViewController:tabVC];
+    navVC.interactivePopGestureRecognizer.delegate = self;
     navVC.navigationBarHidden = YES;
     self.window.rootViewController = navVC;
     [self.window makeKeyAndVisible];
